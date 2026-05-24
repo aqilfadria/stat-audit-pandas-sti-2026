@@ -20,3 +20,36 @@ id,number,title,state,created_at,closed_at,comments,close_duration_days,is_close
 4261193989,65220,BUG: `operation 'add' not supported for dtype 'string[pyarrow]' with dtype 'str'`,closed,2026-04-14 09:45:48+00:00,2026-04-16 19:35:14+00:00,3,2,1
 4258548072,65218,"BUG: `DataFrame.agg([...], numeric_only=True)` returns `NaN` for non-numeric columns instead of excluding them",closed,2026-04-13 23:48:06+00:00,2026-04-30 01:35:36+00:00,0,16,1
 4257146085,65213,BUILD: meson.build fails in Pandas 2.3.1 as of earlier today due to meson 1.11 update,closed,2026-04-13 18:49:19+00:00,2026-04-13 22:23:31+00:00,5,0,1
+4256707963,65210,API: Index.take discards fill_value and raises unnecessarily,closed,2026-04-13 17:28:10+00:00,2026-04-27 20:54:18+00:00,2,14,1
+4248251536,65190,ENH: Simplify reading vertically stacked CSV tables,closed,2026-04-12 13:48:48+00:00,2026-04-12 14:46:38+00:00,3,0,1
+4242055305,65160,PERF: Specify `how` when calling `merge._factorize_keys` when possible,closed,2026-04-10 22:35:32+00:00,2026-04-29 00:18:17+00:00,1,18,1
+4239445724,65150,BUG: pd.to_timedelta ignores unit value for certain float values,closed,2026-04-10 13:25:48+00:00,2026-04-20 20:20:40+00:00,2,10,1
+4235362506,65140,"BUG: `groupby(..., as_index=False)[col].ohlc()` returns group keys in the index",closed,2026-04-09 22:54:16+00:00,2026-04-10 22:33:21+00:00,1,0,1
+4225335006,65122,ENH: Add DataFrame.memory_report() for actionable dtype optimization suggestions,closed,2026-04-08 14:35:08+00:00,2026-04-09 18:23:29+00:00,2,1,1
+4213690239,65100,BUG: `GroupBy.any()`/`all()` on NumPy `bool` columns return `NaN` for empty groups and upcast to `float64` instead of `bool`,closed,2026-04-06 19:36:19+00:00,2026-04-07 13:29:33+00:00,0,0,1
+4204959698,65068,DOC: Typo in the webpage docs/getting_started/intro_tutorials/09_timeseries.html,closed,2026-04-04 13:38:42+00:00,2026-04-04 16:54:35+00:00,1,0,1
+4194478248,65003,"PERF: DataFrame row-wise .loc assignment is much slower with string_storage=""pyarrow"" than ""python""",closed,2026-04-02 13:05:00+00:00,2026-04-09 18:14:22+00:00,2,7,1
+4192917932,65000,"BUG: `na_rep=""""` in `DataFrame.to_csv` not applied consistently",closed,2026-04-02 08:41:22+00:00,2026-04-02 09:30:29+00:00,2,0,1
+4190095228,64994,DOC: Clarify Series index alignment in DataFrame.assign,closed,2026-04-01 21:50:14+00:00,2026-05-06 16:50:51+00:00,1,34,1
+4186484781,64978,BUG: read_parquet fails with tz aware data,closed,2026-04-01 12:19:42+00:00,2026-04-10 16:56:19+00:00,8,9,1
+4181546645,64968,BUG: pyarrow-backed string dtype addition with missing value scalar fails,closed,2026-03-31 18:52:08+00:00,2026-04-16 12:59:01+00:00,2,15,1
+4177252113,64941,"BUG: `str.replace("""", """")` sometimes hangs up the console",closed,2026-03-31 08:45:09+00:00,2026-04-28 15:12:09+00:00,8,28,1
+4150627044,64888,BUILD: Update Pandas on Skills Network,closed,2026-03-27 08:33:54+00:00,2026-03-27 15:46:50+00:00,1,0,1
+4146127758,64883,PERF: sort_index on RangeIndex with level= copies data blocks unnecessarily,closed,2026-03-26 17:52:58+00:00,2026-04-21 17:14:58+00:00,2,25,1
+4139502144,64866,DOC: bool vs int in object-dtype methods,closed,2026-03-26 00:39:12+00:00,2026-04-16 19:38:15+00:00,3,21,1
+4137473850,64844,BUG: numpy array type is not being respected in `Index` constructor,closed,2026-03-25 18:13:15+00:00,2026-05-13 17:35:47+00:00,1,48,1
+4136583133,64841,"ENH: add method=""time"" to .reindex() to interpolate timeseries to different DatetimeIndex",closed,2026-03-25 16:03:22+00:00,2026-03-25 22:36:49+00:00,4,0,1
+4131393291,64834,BUG: bdate_range returns one less days when end and periods are given,closed,2026-03-24 23:44:58+00:00,2026-04-24 08:37:16+00:00,4,30,1
+4130031159,64828,BUG: Timedelta.round() raises ZeroDivisionError when internal unit is 's' and target frequency is sub-second,closed,2026-03-24 19:00:20+00:00,2026-04-10 17:36:04+00:00,2,16,1
+4125329990,64819,BUG: DataFrames with backwards time index cannot be plotted,closed,2026-03-24 05:16:52+00:00,2026-03-31 17:26:24+00:00,3,7,1
+4112875412,64750,DOC: `[source]` links are incorrect,closed,2026-03-21 15:43:10+00:00,2026-03-31 10:03:13+00:00,6,9,1
+4112753929,64749,BUG: can no longer use `__getitem__` on `np.True_` column with `True`,closed,2026-03-21 14:49:46+00:00,2026-03-26 00:37:42+00:00,1,4,1
+4112027542,64747,QST: كيف احصل على بيانات الاسهم من ياهو فايننس على اكسل,closed,2026-03-21 10:31:04+00:00,2026-03-21 21:12:16+00:00,2,0,1
+4110726935,64744,Pandas dataframe does not initialize,closed,2026-03-21 00:21:45+00:00,2026-03-21 15:53:53+00:00,1,0,1
+4108176039,64738,ENH: Add coerce errors functionality to pandas.Series.apply,closed,2026-03-20 14:21:34+00:00,2026-03-20 15:58:12+00:00,3,0,1
+4107413883,64737,BUG: case_when() does return default string type,closed,2026-03-20 11:44:33+00:00,2026-03-20 12:30:57+00:00,1,0,1
+4104612867,64730,BLD|CI: Failing to Build Wheels on macosx_x86_64,closed,2026-03-19 22:43:08+00:00,2026-03-20 17:51:30+00:00,3,0,1
+4102321777,64713,BUG:,closed,2026-03-19 15:04:13+00:00,2026-03-19 15:45:29+00:00,1,0,1
+4101419288,64707,DIST: Include Vendored Licenses in Wheel,closed,2026-03-19 12:39:33+00:00,2026-03-20 18:32:39+00:00,4,1,1
+4101062665,64704,convert_dtypes corrupts column shape on sliced DataFrame with mixed dtypes,closed,2026-03-19 11:29:46+00:00,2026-03-19 16:50:12+00:00,2,0,1
+4100675535,64702,BUG: Wrong dataframe data after `convert_dtypes`,closed,2026-03-19 10:11:31+00:00,2026-03-21 02:55:33+00:00,1,1,1
