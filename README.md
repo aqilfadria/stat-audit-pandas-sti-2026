@@ -10,7 +10,7 @@ https://github.com/pandas-dev/pandas
 | Name | Role |
 |---|---|
 | Ahmad Aqil Fadria | Data Engineer |
-| ... | Estimation Analyst |
+| Nasya Putri Salsabila | Estimation Analyst |
 | ... | Inference Analyst |
 | ... | Hypothesis Analyst |
 | ... | Computation Analyst |
