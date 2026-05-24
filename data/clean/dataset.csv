@@ -4,3 +4,19 @@ id,number,title,state,created_at,closed_at,comments,close_duration_days,is_close
 4412326774,65553,ENH: Improve missing column KeyError message in DataFrame access,closed,2026-05-09 11:18:01+00:00,2026-05-09 16:23:27+00:00,1,0,1
 4409913376,65550,BUG:  `groupby` cumprod/cummin/cummax returns `Float64` for nullable integers when group key contains `NA`,closed,2026-05-08 22:56:54+00:00,2026-05-15 11:33:32+00:00,0,6,1
 4403014478,65518,BUG: Conversion from np.ma.masked_array to pd.array does not preserve missing values,closed,2026-05-08 01:11:36+00:00,2026-05-08 07:25:18+00:00,2,0,1
+4385963314,65472,DOC: Missing docstring for enable_data_resource_formatter in printing module,closed,2026-05-05 17:33:36+00:00,2026-05-06 16:02:05+00:00,6,0,1
+4384546205,65469,BUG: regression in nightlies: `Index.str.findall` crashes,closed,2026-05-05 13:45:27+00:00,2026-05-21 19:22:27+00:00,3,16,1
+4376965251,65462,DEP: update of fsspec 2026.4 broke compressed csv reading,closed,2026-05-04 13:29:58+00:00,2026-05-05 16:36:11+00:00,5,1,1
+4337604979,65380,PERF: skip to_datetime cache=True overhead for input shapes where it cannot help,closed,2026-04-27 17:21:00+00:00,2026-05-08 21:18:28+00:00,1,11,1
+4332953561,65375,BUG:  Index `&` operator performs bitwise AND instead of set intersection for int64 dtype in v2.2.3,closed,2026-04-27 03:50:22+00:00,2026-04-27 10:44:28+00:00,4,0,1
+4329507850,65369,"DOC: `to_numeric` ""Returns"" is missing Index and scalars, may have other problems",closed,2026-04-25 23:30:58+00:00,2026-05-05 21:32:51+00:00,1,9,1
+4323799291,65361,ENH: Introduce SECURITY.md,closed,2026-04-24 15:03:57+00:00,2026-04-28 21:35:06+00:00,2,4,1
+4321777112,65357,"BUG: df.query() returning an empty dataframe on this condition - col1 in (col2, col3)",closed,2026-04-24 08:53:11+00:00,2026-05-03 13:50:53+00:00,0,9,1
+4309613683,65333,BUG: Series.combine_first fails when names are of type Timestamp,closed,2026-04-22 14:13:57+00:00,2026-05-03 13:22:26+00:00,0,10,1
+4299890429,65315,BUG: DataFrame/Series.rename silently downcasts nullable index/column dtypes to NumPy dtypes,closed,2026-04-21 02:26:55+00:00,2026-04-29 08:29:56+00:00,2,8,1
+4264861734,65227,"BUG: [REGRESSION] to_csv cannot handle FloatingArrays with np.nan, even with distinguish_nan_and_na=True",closed,2026-04-14 21:35:19+00:00,2026-04-21 15:51:08+00:00,2,6,1
+4263954687,65226,CI regression: Doc Build and pre-commit jobs failing across multiple PRs,closed,2026-04-14 18:16:16+00:00,2026-04-15 15:54:57+00:00,0,0,1
+4263477706,65223,BUG: 1-element pd.NA boolean arrays are all() but not any(),closed,2026-04-14 16:34:06+00:00,2026-04-14 21:19:26+00:00,2,0,1
+4261193989,65220,BUG: `operation 'add' not supported for dtype 'string[pyarrow]' with dtype 'str'`,closed,2026-04-14 09:45:48+00:00,2026-04-16 19:35:14+00:00,3,2,1
+4258548072,65218,"BUG: `DataFrame.agg([...], numeric_only=True)` returns `NaN` for non-numeric columns instead of excluding them",closed,2026-04-13 23:48:06+00:00,2026-04-30 01:35:36+00:00,0,16,1
+4257146085,65213,BUILD: meson.build fails in Pandas 2.3.1 as of earlier today due to meson 1.11 update,closed,2026-04-13 18:49:19+00:00,2026-04-13 22:23:31+00:00,5,0,1
