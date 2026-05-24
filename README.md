@@ -23,7 +23,7 @@ https://github.com/pandas-dev/pandas
 | Nasya Putri Salsabila | Estimation Analyst |
 | ... | Inference Analyst |
 | Muhammad Rizqi Hazami | Hypothesis Analyst |
-| ... | Computation Analyst |
+| Krishna Dhikha Pratama | Computation Analyst |
 
 ---
 
