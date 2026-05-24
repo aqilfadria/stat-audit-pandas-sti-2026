@@ -9,8 +9,7 @@ https://github.com/pandas-dev/pandas
 ## Team Members
 | Name | Role |
 |---|---|
-| Ahmad Aqil Fadria | Team Leader |
-| ... | Data Engineer |
+| Ahmad Aqil Fadria | Data Engineer |
 | ... | Estimation Analyst |
 | ... | Inference Analyst |
 | ... | Hypothesis Analyst |
