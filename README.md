@@ -21,7 +21,7 @@ https://github.com/pandas-dev/pandas
 |---|---|
 | Ahmad Aqil Fadria | Data Engineer |
 | Nasya Putri Salsabila | Estimation Analyst |
-| ... | Inference Analyst |
+| Muhammad Hanief Inayatur Rahman | Inference Analyst |
 | Muhammad Rizqi Hazami | Hypothesis Analyst |
 | Krishna Dhikha Pratama | Computation Analyst |
 
