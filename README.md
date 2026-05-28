@@ -1,48 +1,43 @@
 # Statistical Audit of pandas-dev/pandas
 
 ## Project Description
-This project conducts a statistical audit of the open-source GitHub repository `pandas-dev/pandas`.  
-The analysis applies statistical estimation, confidence intervals, hypothesis testing, and computational simulation techniques to evaluate repository health, contributor activity, and issue management performance.
+Proyek ini melakukan audit statistik terhadap repositori GitHub open-source `pandas-dev/pandas`.
+Analisis ini menerapkan estimasi statistik, interval kepercayaan, pengujian hipotesis, dan teknik simulasi komputasi untuk mengevaluasi kesehatan repositori, aktivitas kontributor, dan kinerja manajemen isu.
 
-The project uses real GitHub event data such as issues, pull requests, timestamps, and merge activity collected through the GitHub REST API.
+Proyek ini menggunakan data peristiwa GitHub nyata seperti isu, permintaan tarik (pull request), stempel waktu, dan aktivitas penggabungan (merge) yang dikumpulkan melalui GitHub REST API.
 
-This assignment is completed as part of the final group project for the Statistics & Probability course Sistem dan Teknologi Informasi.
-
+Tugas ini diselesaikan sebagai bagian dari proyek kelompok akhir untuk mata kuliah Statistika & Probabilitas Sistem dan Teknologi Informasi.
 ---
 
 ## Repository Analyzed
-Repository URL:
-https://github.com/pandas-dev/pandas
+Repository: pandas-dev/pandas
+Repository URL: https://github.com/pandas-dev/pandas
 
 ---
 
 ## Team Members
-| Name | Role |
+| Member | Name | NIM | Role |
 |---|---|
-| Ahmad Aqil Fadria | Data Engineer |
-| Nasya Putri Salsabila | Estimation Analyst |
-| Muhammad Hanief Inayatur Rahman | Inference Analyst |
-| Muhammad Rizqi Hazami | Hypothesis Analyst |
-| Krishna Dhikha Pratama | Computation Analyst |
+| A | Ahmad Aqil Fadria | 1519625006 |  Data Engineer |
+| B | Nasya Putri Salsabila | 1519625007 | Estimation Analyst |
+| C | Muhammad Hanief Inayatur Rahman | ... | Inference Analyst |
+| D | Muhammad Rizqi Hazami | ... | Hypothesis Analyst |
+| E | Krishna Dhikha Pratama | ... | Computation Analyst |
 
 ---
 
 ## Research Questions
-1. What is the estimated probability that a pull request gets merged in pandas-dev/pandas?
-2. Has the average issue closing time changed significantly after a major release?
-3. What is the probability that a randomly selected issue takes longer than 30 days to close?
+1. Berapa estimasi probabilitas sebuah pull request dapat di-merge pada repository pandas-dev/pandas?
+2. Apakah rata-rata tingkat penyelesaian issue pada repository pandas-dev/pandas berubah secara signifikan dalam periode tertentu?
+3. Berapa probabilitas sebuah issue membutuhkan waktu lebih dari 30 hari untuk ditutup berdasarkan pendekatan simulasi statistik?
 
 ---
 
-# Findings
+## Temuan Utama
 
-The findings section will summarize:
-- estimation results
-- confidence interval interpretation
-- hypothesis testing conclusions
-- computational analysis outcomes
+Akan diisi setelah seluruh analisis selesai.
 
 ---
 
-## Project Structure
-See repository folders for notebooks, source modules, datasets, report, and presentation materials.
+## Struktur Reposity
+stat-audit-moby-sti-2025/ → README.md → AI_USAGE_LOG.md → data/ → raw/ (data asli GitHub API) → clean/ (dataset.csv, pull_requests.csv) → src/ → estimator.py [Member B] → inference.py [Member C] → hypothesis.py [Member D] → simulation.py [Member E] → notebooks/ → 01_eda.ipynb → 02_estimation.ipynb → 03_confidence_interval.ipynb → 04_hypothesis_testing.ipynb → 05_simulation.ipynb → report/ → statistical_health_report.pdf → presentation/ → video_link.md → requirements.txt
