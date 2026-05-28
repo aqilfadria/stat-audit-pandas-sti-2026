@@ -7,6 +7,7 @@ Analisis ini menerapkan estimasi statistik, interval kepercayaan, pengujian hipo
 Proyek ini menggunakan data peristiwa GitHub nyata seperti isu, permintaan tarik (pull request), stempel waktu, dan aktivitas penggabungan (merge) yang dikumpulkan melalui GitHub REST API.
 
 Tugas ini diselesaikan sebagai bagian dari proyek kelompok akhir untuk mata kuliah Statistika & Probabilitas Sistem dan Teknologi Informasi.
+
 ---
 
 ## Repository Analyzed
