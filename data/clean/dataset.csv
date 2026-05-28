@@ -1,55 +1,739 @@
 id,number,title,state,created_at,closed_at,comments,close_duration_days,is_closed
+4517400089,65731,DOC: start 3.0.4 whatsnew notes,closed,2026-05-25 13:53:44+00:00,2026-05-25 14:09:52+00:00,0,0,1
+4513417883,65724,docs: Add reputation comment F74,closed,2026-05-25 00:17:35+00:00,2026-05-25 00:18:08+00:00,0,0,1
+4513408587,65723,docs: Add reputation comment F68,closed,2026-05-25 00:14:11+00:00,2026-05-25 00:16:55+00:00,0,0,1
+4513378278,65722,docs: Add reputation comment F62,closed,2026-05-25 00:03:51+00:00,2026-05-25 00:16:54+00:00,0,0,1
+4513330479,65721,F23: Add dummy test,closed,2026-05-24 23:43:09+00:00,2026-05-25 00:16:54+00:00,0,0,1
+4513329832,65720,F22: Add dummy test for pandas utility,closed,2026-05-24 23:42:52+00:00,2026-05-25 00:16:53+00:00,0,0,1
+4513324807,65719,docs: Add comment for reputation,closed,2026-05-24 23:40:26+00:00,2026-05-25 00:16:53+00:00,0,0,1
+4510614392,65717,CI: Update pixi.lock,closed,2026-05-24 05:34:32+00:00,2026-05-24 17:43:48+00:00,0,0,1
+4509852542,65716,BUG: DataFrame.update warns when index dtype mismatch causes silent no-op,closed,2026-05-23 23:05:41+00:00,2026-05-24 04:28:42+00:00,0,0,1
+4488268215,65697,"Revert ""BUG: reject unhashable elements in Index constructor (#64798)""",closed,2026-05-20 16:38:19+00:00,2026-05-20 21:22:12+00:00,1,0,1
+4487130682,65693,[backport 3.0.x] TST: Adjust xfails for fastparquet 2026.05.0 (#65668),closed,2026-05-20 14:03:23+00:00,2026-05-20 16:33:10+00:00,0,0,1
+4482583068,65689,BUG: pyarrow-nightly CI fails during Pixi install due to stale locked nightly wheel,closed,2026-05-20 02:16:42+00:00,2026-05-20 03:58:29+00:00,0,0,1
+4481687393,65687,BLD: bump meson to 1.3.0,closed,2026-05-19 22:57:59+00:00,2026-05-20 00:30:11+00:00,1,0,1
+4480153069,65686,BUG: Fix Index.where raising AssertionError when other is a RangeIndex,closed,2026-05-19 18:54:58+00:00,2026-05-21 14:34:32+00:00,7,1,1
 4477858094,65685,"BUG: Index.where(..., Index) fails on 3.1.0 but works on 3.0.3",closed,2026-05-19 13:39:44+00:00,2026-05-21 14:34:35+00:00,4,2,1
 4475095354,65684,ENH: Add `df.corrupt()` accessor to inject random faults and typos for Data Science education,closed,2026-05-19 06:52:43+00:00,2026-05-19 20:08:10+00:00,1,0,1
+4472686052,65681,ASV: garbage collect as part of setup,closed,2026-05-18 21:24:09+00:00,2026-05-23 17:26:56+00:00,1,4,1
+4469701000,65680,Bump github/codeql-action from 4.35.4 to 4.35.5,closed,2026-05-18 13:54:43+00:00,2026-05-18 15:27:45+00:00,0,0,1
+4464102121,65672,DOC: Add constructor parameters to BYearEnd docstring,closed,2026-05-17 16:16:18+00:00,2026-05-18 08:59:53+00:00,0,0,1
+4463432253,65671,ERR: raise ValueError for non-boolean numeric_only in reductions (GH#53098),closed,2026-05-17 12:17:41+00:00,2026-05-19 15:30:10+00:00,1,2,1
+4463176329,65670,BUG: validate melt output column names,closed,2026-05-17 10:30:47+00:00,2026-05-18 15:36:12+00:00,1,1,1
+4462663388,65669,DOC: link Try pandas from Getting started,closed,2026-05-17 07:28:08+00:00,2026-05-18 15:35:34+00:00,2,1,1
+4462411508,65668,CI: Update pixi.lock + TST: Adjust xfails for fastparquet 2026.05.0,closed,2026-05-17 05:31:42+00:00,2026-05-20 13:55:50+00:00,3,3,1
+4461922275,65666,PERF: Add ArrowExtensionArray.view fast path,closed,2026-05-17 01:38:45+00:00,2026-05-20 02:44:57+00:00,2,3,1
+4461774473,65665,BUG: Handle Arrow intervals with datetimetz subtype,closed,2026-05-17 00:32:03+00:00,2026-05-18 15:35:24+00:00,1,1,1
+4461470852,65663,fix: validate C function returns and validate type ranges at FFI boundary,closed,2026-05-16 22:09:49+00:00,2026-05-18 15:44:37+00:00,2,1,1
+4461416126,65662,PERF: limit ADBC has_table metadata depth,closed,2026-05-16 21:50:15+00:00,2026-05-18 15:35:06+00:00,2,1,1
+4461070579,65661,TST: Speed up test_read_excel_skiprows_callable_all,closed,2026-05-16 19:42:18+00:00,2026-05-25 02:17:25+00:00,1,8,1
+4460584878,65658,PERF: use Index._id for axis-identity checks in concat fast paths,closed,2026-05-16 16:34:22+00:00,2026-05-16 17:20:38+00:00,1,0,1
+4459382532,65657,BUG: preserve quoted case in Excel number formats,closed,2026-05-16 09:16:38+00:00,2026-05-16 12:04:25+00:00,1,0,1
+4456958017,65653,BUG: Preserve dtype in Index.where,closed,2026-05-15 21:05:55+00:00,2026-05-15 23:52:07+00:00,1,0,1
+4456876786,65651,CLN: Reduce and cleanup benchmarks/algorithms,closed,2026-05-15 20:50:18+00:00,2026-05-16 17:08:20+00:00,1,0,1
+4456541454,65650,assert_index_equal fix,closed,2026-05-15 19:46:49+00:00,2026-05-15 20:02:00+00:00,1,0,1
+4453216109,65648,PERF: Improve performance of groupby.size,closed,2026-05-15 10:34:08+00:00,2026-05-20 16:04:50+00:00,2,5,1
+4448232473,65643,DOC: Fix iloc value swapping example to prevent axis alignment #65446,closed,2026-05-14 18:16:21+00:00,2026-05-15 02:19:19+00:00,0,0,1
+4448155983,65642,DOC: clarify scalar vs list-like return types for .loc and [],closed,2026-05-14 18:03:53+00:00,2026-05-16 17:03:54+00:00,1,1,1
+4448142202,65641,"DOC: clarify df[col]= replaces a column vs df.loc[:, col]= setting in place",closed,2026-05-14 18:01:45+00:00,2026-05-15 16:23:00+00:00,1,0,1
+4448109075,65640,DOC: clarify column-wise NA-skipping behavior of GroupBy.first/last,closed,2026-05-14 17:56:17+00:00,2026-05-19 20:30:12+00:00,1,5,1
+4448025966,65639,TYP: enable mypy checks for pandas._libs.tslibs,closed,2026-05-14 17:42:09+00:00,2026-05-15 16:24:13+00:00,1,0,1
+4447995138,65638,DOC: clarify pandas.unique return type,closed,2026-05-14 17:37:26+00:00,2026-05-16 17:22:25+00:00,1,1,1
+4447941128,65637,DOC: list IntervalIndex.get_loc and get_indexer on the API reference page,closed,2026-05-14 17:28:57+00:00,2026-05-15 16:24:57+00:00,1,0,1
+4447900810,65636,DOC: spell out low_memory split-value hazard in read_csv/read_table,closed,2026-05-14 17:22:48+00:00,2026-05-16 17:25:10+00:00,1,2,1
+4447735889,65634,DOC: document default axis=0 on DataFrame reductions,closed,2026-05-14 16:58:50+00:00,2026-05-16 17:26:46+00:00,1,2,1
+4441519533,65631,DOC: relax MultiIndex.from_tuples 'tuples' parameter description,closed,2026-05-13 22:09:51+00:00,2026-05-14 16:45:25+00:00,1,0,1
+4440092624,65630,TYP: enable mypy checks for pandas._libs.parsers,closed,2026-05-13 17:58:19+00:00,2026-05-14 16:46:48+00:00,1,0,1
+4439861282,65629,TYP: enable mypy checks for low-hanging _libs stubs,closed,2026-05-13 17:18:42+00:00,2026-05-16 17:18:05+00:00,0,2,1
+4438850578,65628,BUG: AreaPlot ymin baseline pin defeated by unrelated sharey'd axes,closed,2026-05-13 14:48:33+00:00,2026-05-13 17:17:26+00:00,3,0,1
+4438683763,65627,ENH: support dtype=complex64/complex128 in read_csv C engine (GH-9379),closed,2026-05-13 14:25:28+00:00,2026-05-13 16:47:22+00:00,1,0,1
+4435631675,65626,DOC: clarify Timedelta unit behavior in arithmetic,closed,2026-05-13 06:59:01+00:00,2026-05-22 14:59:17+00:00,1,9,1
+4433587963,65625,TST: show actual ymin/ymax in test_area_lim flake,closed,2026-05-13 00:29:22+00:00,2026-05-13 01:23:00+00:00,0,0,1
+4433517612,65624,TYP: enable mypy checking for pandas.core.dtypes.missing,closed,2026-05-13 00:14:04+00:00,2026-05-13 17:18:19+00:00,1,0,1
+4433501240,65623,DOC: explain why to prefer to_numpy/.array over .values,closed,2026-05-13 00:09:38+00:00,2026-05-13 16:51:18+00:00,1,0,1
+4433171312,65622,DOC: clarify header parameter in read_csv/read_table,closed,2026-05-12 22:48:25+00:00,2026-05-13 16:52:23+00:00,1,0,1
+4433157753,65621,DOC: document dict input to DataFrame.assign (GH-49817),closed,2026-05-12 22:45:40+00:00,2026-05-13 16:53:18+00:00,1,0,1
+4433134159,65620,DOC: clarify several docstrings,closed,2026-05-12 22:40:41+00:00,2026-05-15 16:15:19+00:00,1,2,1
+4433124282,65619,DOC: clarify that to_parquet/to_orc path accepts remote URLs,closed,2026-05-12 22:38:38+00:00,2026-05-13 16:54:08+00:00,1,0,1
+4433084805,65618,TYP: enable mypy checks for pandas._libs.algos,closed,2026-05-12 22:29:45+00:00,2026-05-13 14:26:51+00:00,0,0,1
+4430500619,65617,Feature/deprecate groupby sort default##64996,closed,2026-05-12 15:38:02+00:00,2026-05-12 15:39:16+00:00,0,0,1
+4430202640,65616,CLN: remove unused functions,closed,2026-05-12 14:57:42+00:00,2026-05-12 16:12:32+00:00,1,0,1
+4425392845,65614,TYP: enable mypy checking for pandas._testing,closed,2026-05-12 01:05:00+00:00,2026-05-12 16:16:25+00:00,1,0,1
+4425343370,65613,TYP: enable mypy on pandas.core._numba.executor,closed,2026-05-12 00:52:32+00:00,2026-05-12 19:20:50+00:00,0,0,1
+4425340992,65612,TYP: enable mypy for pandas.core.computation.common,closed,2026-05-12 00:51:47+00:00,2026-05-12 16:17:50+00:00,0,0,1
+4425335659,65611,TYP: enable mypy checks for pandas.util,closed,2026-05-12 00:50:07+00:00,2026-05-12 19:21:38+00:00,1,0,1
+4425301139,65610,TYP: enable pyright checking for pandas.compat.pickle_compat,closed,2026-05-12 00:39:54+00:00,2026-05-12 16:18:59+00:00,0,0,1
+4425260745,65609,Backport PR #65591 on branch 3.0.x (BUG: fix np_datetime.c include order to avoid numpy nightly segfault),closed,2026-05-12 00:28:19+00:00,2026-05-12 08:27:29+00:00,0,0,1
+4424020914,65605,DOC: explain Index.slice_locs missing-label behavior (GH-32680),closed,2026-05-11 20:22:11+00:00,2026-05-12 16:22:05+00:00,1,0,1
+4423902090,65600,ERR: point to workaround when appending HDF5 categoricals with different categories,closed,2026-05-11 20:03:20+00:00,2026-05-12 16:29:35+00:00,1,0,1
+4423899120,65599,TST: read_stata far-future dates no longer overflow (GH-36096),closed,2026-05-11 20:02:53+00:00,2026-05-12 16:27:48+00:00,1,0,1
+4423896288,65598,BUG: avoid materializing full arange in HDFStore chunked iteration (GH-15937),closed,2026-05-11 20:02:25+00:00,2026-05-12 16:31:30+00:00,1,0,1
+4423889976,65596,TST: regression test for concat preserving NaN payload bits (GH-51675),closed,2026-05-11 20:01:28+00:00,2026-05-12 16:26:13+00:00,2,0,1
+4423779671,65594,TYP: enable mypy checks on pandas.core.indexes.category,closed,2026-05-11 19:43:12+00:00,2026-05-12 17:47:27+00:00,1,0,1
+4422905174,65592,DEPR: deprecate include/exclude on Series.describe (GH-54193),closed,2026-05-11 17:30:20+00:00,2026-05-16 15:31:11+00:00,1,4,1
+4422892085,65591,BUG: fix np_datetime.c include order to avoid numpy nightly segfault,closed,2026-05-11 17:28:21+00:00,2026-05-12 00:27:44+00:00,2,0,1
+4422148305,65590,RLS: 3.0.3,closed,2026-05-11 15:38:41+00:00,2026-05-11 16:12:03+00:00,0,0,1
+4421453951,65589,RLS: update whatsnew for 3.0.3,closed,2026-05-11 14:01:16+00:00,2026-05-11 15:27:32+00:00,1,0,1
+4420224458,65586,Bump github/codeql-action from 4.35.3 to 4.35.4,closed,2026-05-11 10:57:35+00:00,2026-05-11 13:53:03+00:00,0,0,1
+4420102367,65585,BUG: fix is_monotonic_increasing/decreasing properties for ExtensionArrays,closed,2026-05-11 10:39:01+00:00,2026-05-14 00:33:52+00:00,1,2,1
+4418200277,65584,DOC: Update documentation for DataFrame join parameters,closed,2026-05-11 05:03:44+00:00,2026-05-11 20:43:58+00:00,1,0,1
+4417044639,65582,BUG: clearer error for HDFStore MultiIndex level named 'index' (GH-6208),closed,2026-05-10 22:40:40+00:00,2026-05-12 16:33:18+00:00,1,1,1
+4416568685,65579,Update link to `tzdata` documentation,closed,2026-05-10 19:16:38+00:00,2026-05-11 15:18:09+00:00,1,0,1
+4416478593,65578,BUG: clearer error for unsupported dtypes in HDFStore,closed,2026-05-10 18:38:26+00:00,2026-05-11 15:35:09+00:00,1,0,1
+4414741853,65569,CI: Update pixi.lock,closed,2026-05-10 05:24:27+00:00,2026-05-12 09:39:13+00:00,2,2,1
+4414314858,65568,updates for mypy 2.0.0 and pyright 1.1.409,closed,2026-05-10 01:31:39+00:00,2026-05-17 20:09:16+00:00,1,7,1
+4414225570,65567,"BUG: round-trip TimedeltaIndex through to_hdf(format=""table"") (GH-21466)",closed,2026-05-10 00:37:13+00:00,2026-05-16 17:16:19+00:00,0,6,1
+4414184332,65566,BUG: support PeriodDtype values in HDFStore (GH-41978),closed,2026-05-10 00:14:37+00:00,2026-05-11 15:22:37+00:00,1,1,1
+4413954592,65565,CLN: drop removed .bool() from __bool__ ambiguous-truth message (GH-61417),closed,2026-05-09 22:02:31+00:00,2026-05-11 15:20:34+00:00,1,1,1
+4413481379,65563,DOC: document compiled regex with flags in replace (GH-32233),closed,2026-05-09 18:32:20+00:00,2026-05-11 15:24:27+00:00,1,1,1
+4413478090,65562,"BUG: clearer error for read_csv(BytesIO, memory_map=True) (GH-45630)",closed,2026-05-09 18:31:17+00:00,2026-05-11 15:40:24+00:00,1,1,1
+4413453417,65561,DOC: warn raw=True ndarray lacks .iloc/.index in Rolling/Expanding.apply (GH-38809),closed,2026-05-09 18:24:05+00:00,2026-05-11 15:43:15+00:00,1,1,1
+4413400781,65560,DOC: document infer_nrows=np.inf for read_fwf (GH-21970),closed,2026-05-09 18:07:57+00:00,2026-05-11 15:46:11+00:00,1,1,1
+4412759315,65556,TST: add test for kendall correlation with duplicates,closed,2026-05-09 14:15:26+00:00,2026-05-12 00:19:42+00:00,2,2,1
+4412754593,65555,TYP: fix frame apply reduction typing,closed,2026-05-09 14:13:22+00:00,2026-05-13 17:49:28+00:00,1,4,1
+4412520346,65554,Improve KeyError message in DataFrame indexingImprove keyerror message,closed,2026-05-09 12:37:52+00:00,2026-05-09 16:23:21+00:00,2,0,1
 4412326774,65553,ENH: Improve missing column KeyError message in DataFrame access,closed,2026-05-09 11:18:01+00:00,2026-05-09 16:23:27+00:00,1,0,1
+4411325140,65552,BUG: Ensure read_excel creates DatetimeIndex with pyarrow backend (#6…,closed,2026-05-09 05:33:24+00:00,2026-05-09 08:31:13+00:00,0,0,1
+4409922373,65551,BUG: fix `groupby` cumprod/cummin/cummax dropping nullable int dtype when group key has `NA`,closed,2026-05-08 22:59:14+00:00,2026-05-15 11:33:31+00:00,1,6,1
 4409913376,65550,BUG:  `groupby` cumprod/cummin/cummax returns `Float64` for nullable integers when group key contains `NA`,closed,2026-05-08 22:56:54+00:00,2026-05-15 11:33:32+00:00,0,6,1
+4409884115,65549,TYP: annotate pandas/_config/config.py,closed,2026-05-08 22:49:43+00:00,2026-05-08 23:51:52+00:00,1,0,1
+4409832471,65548,TYP: enable mypy checking for pandas.util._decorators,closed,2026-05-08 22:38:27+00:00,2026-05-11 15:25:44+00:00,1,2,1
+4409803535,65547,TYP: annotate pandas/io/excel/_pyxlsb and drop from mypy overrides,closed,2026-05-08 22:32:31+00:00,2026-05-08 23:52:53+00:00,1,0,1
+4409800580,65546,DOC: fix relativedelta link in DateOffset See Also,closed,2026-05-08 22:31:53+00:00,2026-05-08 23:54:32+00:00,2,0,1
+4409775244,65545,DOC: clarify GroupBy.resample parameters (GH-54295),closed,2026-05-08 22:26:33+00:00,2026-05-09 11:59:19+00:00,1,0,1
+4409745468,65544,DOC: clarify read_fwf filepath_or_buffer description (GH-55790),closed,2026-05-08 22:20:09+00:00,2026-05-08 23:57:05+00:00,1,0,1
+4409700735,65543,TYP: enable mypy on pandas.compat.numpy.function,closed,2026-05-08 22:10:36+00:00,2026-05-08 23:58:20+00:00,1,0,1
+4409697150,65542,DOC: clarify result_type has no effect for ufuncs in DataFrame.apply,closed,2026-05-08 22:09:44+00:00,2026-05-08 23:59:47+00:00,1,0,1
+4409676220,65541,TYP: enable mypy checking for pandas.core.sorting,closed,2026-05-08 22:04:44+00:00,2026-05-09 00:00:52+00:00,1,0,1
+4409663321,65540,TYP: enable mypy disallow_untyped_defs for pandas.core.roperator,closed,2026-05-08 22:01:32+00:00,2026-05-09 00:01:49+00:00,1,0,1
+4409656432,65539,DOC: document Rolling.apply Series index when on= is specified,closed,2026-05-08 21:59:50+00:00,2026-05-09 00:02:40+00:00,1,0,1
+4409653485,65538,DOC: clarify ExcelWriter engine vs package names (GH-48514),closed,2026-05-08 21:59:02+00:00,2026-05-11 15:47:40+00:00,1,2,1
+4409615013,65537,TYP: enable mypy checks on pandas.core.dtypes.generic,closed,2026-05-08 21:50:59+00:00,2026-05-09 00:04:02+00:00,1,0,1
+4409596843,65535,TYP: enable mypy on core.internals.api,closed,2026-05-08 21:47:11+00:00,2026-05-09 00:05:19+00:00,1,0,1
+4409579358,65534,TYP: enable mypy checking for pandas.core.window.online,closed,2026-05-08 21:43:15+00:00,2026-05-09 00:06:35+00:00,1,0,1
+4409569568,65533,TYP: type-check pandas.core.sample,closed,2026-05-08 21:41:07+00:00,2026-05-09 11:53:40+00:00,1,0,1
+4409563088,65532,"DOC: clarify from_spmatrix converts to CSC, not COO (GH-43419)",closed,2026-05-08 21:39:38+00:00,2026-05-12 16:32:16+00:00,1,3,1
+4409534718,65531,CLN: drop stale pre-commit exclude for deleted code_style.rst,closed,2026-05-08 21:34:25+00:00,2026-05-09 00:08:30+00:00,1,0,1
+4409515992,65530,TST: DataFrame.sum(axis=1) min_count for SparseDtype columns,closed,2026-05-08 21:30:34+00:00,2026-05-15 21:12:56+00:00,5,6,1
+4407893883,65527,"DOC: drop dead redirects, generate ExtensionDtype member pages",closed,2026-05-08 16:37:50+00:00,2026-05-09 00:09:46+00:00,1,0,1
+4404414683,65522,DOC: rewrite DataFrameGroupBy.hist docstring for groupby,closed,2026-05-08 06:46:29+00:00,2026-05-08 17:53:03+00:00,1,0,1
+4403901771,65520,Backport PR #65436 on branch 3.0.x (Account for privatization of matplotlib `Formatter.locs` attribute),closed,2026-05-08 05:01:35+00:00,2026-05-08 07:49:39+00:00,2,0,1
+4403556868,65519,DOC: clarify read_xml xpath behavior with default namespace,closed,2026-05-08 03:24:44+00:00,2026-05-09 04:57:51+00:00,2,1,1
 4403014478,65518,BUG: Conversion from np.ma.masked_array to pd.array does not preserve missing values,closed,2026-05-08 01:11:36+00:00,2026-05-08 07:25:18+00:00,2,0,1
+4402923187,65517,"DOC: fix broken refs, math, and grammar in window user guide",closed,2026-05-08 00:48:35+00:00,2026-05-08 17:48:39+00:00,1,0,1
+4402905962,65516,DOC: fix pyenv path example in contributing_environment,closed,2026-05-08 00:44:34+00:00,2026-05-08 07:51:32+00:00,0,0,1
+4402842985,65514,DOC: refresh deprecation/version policy doc for PDEP-17,closed,2026-05-08 00:27:34+00:00,2026-05-08 17:20:18+00:00,1,0,1
+4402801988,65512,TYP: annotate OpsMixin comparison/arith/logical dunders with Self (GH-40762),closed,2026-05-08 00:18:02+00:00,2026-05-08 17:45:25+00:00,1,0,1
+4402185827,65509,TST: regression tests for Timestamp.fromisoformat tz preservation (GH-56398),closed,2026-05-07 21:37:33+00:00,2026-05-08 17:50:56+00:00,1,0,1
+4402156657,65508,BUG: to_julian_date ignored timezone (GH-54763),closed,2026-05-07 21:30:47+00:00,2026-05-08 17:52:16+00:00,1,0,1
+4402138355,65506,BUG: groupby(as_index=False).resample().agg(dict) raises (GH-52397),closed,2026-05-07 21:26:29+00:00,2026-05-08 17:40:33+00:00,1,0,1
+4401986759,65505,DOC: steer Excel docs away from deprecated xlrd/pyxlsb engines,closed,2026-05-07 21:01:25+00:00,2026-05-08 17:26:11+00:00,1,0,1
+4401872794,65504,DOC: explain why and/or/not cannot be used with pd.NA,closed,2026-05-07 20:45:18+00:00,2026-05-08 17:27:24+00:00,1,0,1
+4401866189,65503,"DOC: fix docstring typos, stale references, and broken reST",closed,2026-05-07 20:44:02+00:00,2026-05-08 17:24:59+00:00,1,0,1
+4400224795,65501,Backport PR #65499 on branch 3.0.x (BUG: fix check if pyarrow is installed in cython lib - use existing constant),closed,2026-05-07 16:10:49+00:00,2026-05-07 17:32:36+00:00,0,0,1
+4397737499,65499,BUG: fix check if pyarrow is installed in cython lib - use existing constant,closed,2026-05-07 09:42:32+00:00,2026-05-07 16:10:34+00:00,1,0,1
+4397071425,65498,[backport 3.0.x] PERF: remove special casing for zoneinfo in tz_localize_to_utc (#65481),closed,2026-05-07 07:52:45+00:00,2026-05-07 09:00:02+00:00,0,0,1
+4397017406,65497,TST: improve pytest configuration to run tests of installed package with --pyargs,closed,2026-05-07 07:43:20+00:00,2026-05-07 16:17:16+00:00,1,0,1
+4396765805,65496,TYP: accept Mapping in Styler.format formatter parameter,closed,2026-05-07 06:59:27+00:00,2026-05-07 14:11:34+00:00,1,0,1
+4394644583,65493,TST: extend complex128 coverage in arithmetic and NumpyExtensionArray tests,closed,2026-05-06 21:45:08+00:00,2026-05-08 17:54:36+00:00,1,1,1
+4394554897,65492,"DOC: remove cookbook ""First Pull Request"" invitation",closed,2026-05-06 21:27:52+00:00,2026-05-06 22:14:19+00:00,1,0,1
+4394302518,65491,CLN: remove stale FIXME comments in BlockManager,closed,2026-05-06 20:43:37+00:00,2026-05-06 22:18:59+00:00,1,0,1
+4394245786,65490,Backport PR #65482 on branch 3.0.x (PERF: don't call unique on dtypes for checking if string dtype is present (select_dtypes)),closed,2026-05-06 20:33:55+00:00,2026-05-06 22:17:54+00:00,0,0,1
+4393085146,65489,Backport PR #65410 on branch 3.0.x (TST: also convert str index to object in pyarrow->pandas conversion for infer_string=0 CI),closed,2026-05-06 16:59:55+00:00,2026-05-06 18:06:20+00:00,0,0,1
+4391500931,65487,Issue65478_v2,closed,2026-05-06 12:56:20+00:00,2026-05-06 13:00:25+00:00,0,0,1
+4391440849,65486,[backport 3.0.x] CI: lowercase types-pymysql/types-pyyaml to fix mamba 2.6.0 shard lookup (#65430),closed,2026-05-06 12:47:45+00:00,2026-05-06 13:53:49+00:00,0,0,1
+4391343296,65485,[backport 3.0.x] BUG: keep fsspec OpenFile alive for chained URL reads (#65470),closed,2026-05-06 12:33:14+00:00,2026-05-06 13:54:04+00:00,0,0,1
+4390752535,65484,Issue65478,closed,2026-05-06 10:53:19+00:00,2026-05-06 13:00:51+00:00,0,0,1
+4390190973,65482,PERF: don't call unique on dtypes for checking if string dtype is present (select_dtypes),closed,2026-05-06 09:21:40+00:00,2026-05-06 20:33:47+00:00,4,0,1
+4389999904,65481,PERF: remove special casing for zoneinfo in tz_localize_to_utc,closed,2026-05-06 08:49:38+00:00,2026-05-06 15:59:16+00:00,3,0,1
+4389978691,65480,Backport PR #64379 on branch 3.0.x (PERF: improve performance with ZoneInfo timezones (get internal transitions/deltas to avoid slow python path)),closed,2026-05-06 08:45:39+00:00,2026-05-07 07:30:00+00:00,0,0,1
+4387529491,65477,BUG: fix Index.get_indexer pd.NA vs NaN inconsistency (GH#65419),closed,2026-05-05 22:40:30+00:00,2026-05-14 02:13:12+00:00,1,8,1
+4387375541,65476,TST/CLN: salvage or remove FIXME-commented-out tests,closed,2026-05-05 22:03:18+00:00,2026-05-07 16:18:47+00:00,1,1,1
+4387006153,65474,Remove Source Files From gitignore,closed,2026-05-05 20:46:43+00:00,2026-05-06 22:24:52+00:00,1,1,1
 4385963314,65472,DOC: Missing docstring for enable_data_resource_formatter in printing module,closed,2026-05-05 17:33:36+00:00,2026-05-06 16:02:05+00:00,6,0,1
+4384915554,65470,BUG: keep fsspec OpenFile alive for chained URL reads,closed,2026-05-05 14:39:33+00:00,2026-05-05 16:36:10+00:00,4,0,1
 4384546205,65469,BUG: regression in nightlies: `Index.str.findall` crashes,closed,2026-05-05 13:45:27+00:00,2026-05-21 19:22:27+00:00,3,16,1
+4381617116,65466,DEPR: deprecate inplace keyword in the rename() method,closed,2026-05-05 04:52:29+00:00,2026-05-11 08:43:07+00:00,7,6,1
+4381117838,65465,TYP: typing for IndexSlice,closed,2026-05-05 02:43:36+00:00,2026-05-05 16:38:36+00:00,1,0,1
+4378065534,65464,[pre-commit.ci] pre-commit autoupdate,closed,2026-05-04 16:30:09+00:00,2026-05-04 22:29:41+00:00,0,0,1
+4377751054,65463,CI: Update pixi.lock,closed,2026-05-04 15:29:53+00:00,2026-05-05 13:03:26+00:00,0,0,1
 4376965251,65462,DEP: update of fsspec 2026.4 broke compressed csv reading,closed,2026-05-04 13:29:58+00:00,2026-05-05 16:36:11+00:00,5,1,1
+4376730801,65461,CI: add rendered diff to pixi update workflow,closed,2026-05-04 12:54:04+00:00,2026-05-04 15:21:41+00:00,1,0,1
+4375700451,65460,BUG: Datetime.date dt.accessor (WIP),closed,2026-05-04 10:15:00+00:00,2026-05-11 21:12:05+00:00,2,7,1
+4375400121,65459,Bump github/codeql-action from 4.35.2 to 4.35.3,closed,2026-05-04 09:25:10+00:00,2026-05-04 15:07:13+00:00,0,0,1
+4373752559,65456,Pr 65368: update pyarrow nightly lock to 25.0.0.dev28 to resolve pyarrow nightly error,closed,2026-05-04 02:55:13+00:00,2026-05-11 21:16:46+00:00,3,7,1
+4372987416,65455,CI: Clean misc workflows and files,closed,2026-05-03 21:06:59+00:00,2026-05-10 16:08:35+00:00,0,6,1
+4372319927,65454,DOC: add dict example for DataFrame.fillna,closed,2026-05-03 16:21:59+00:00,2026-05-08 17:59:38+00:00,1,5,1
+4372289796,65453,BUG: use tables on ASV benchmark on non-conda environment types,closed,2026-05-03 16:10:00+00:00,2026-05-04 15:28:37+00:00,1,0,1
+4372206260,65451,TST: address resolvable FIXMEs in tests,closed,2026-05-03 15:33:37+00:00,2026-05-04 15:31:19+00:00,1,0,1
+4372165000,65450,CLN: Address actionable FIXMEs in vendored ujson,closed,2026-05-03 15:16:50+00:00,2026-05-04 15:32:49+00:00,1,1,1
+4372076188,65449,BLD: Add --no-isolation to ASV Build Command,closed,2026-05-03 14:38:01+00:00,2026-05-03 17:30:40+00:00,1,0,1
+4370945819,65447,CI: Update pixi.lock,closed,2026-05-03 05:21:18+00:00,2026-05-03 17:25:54+00:00,0,0,1
+4368357986,65445,DOC: clarify PeriodIndex.is_full behavior with duplicate periods,closed,2026-05-02 07:47:58+00:00,2026-05-03 14:36:58+00:00,2,1,1
+4363483212,65441,DOC: clarify missing-value handling in pandas and NumPy reductions,closed,2026-05-01 08:04:13+00:00,2026-05-06 00:44:31+00:00,3,4,1
+4362360644,65440,TST: regression test for to_timedelta with sub-int64 NumPy scalars (GH-56996),closed,2026-05-01 01:53:18+00:00,2026-05-01 16:11:54+00:00,1,0,1
+4362344479,65439,TST: regression test for concat with keys and mixed-freq PeriodIndex columns,closed,2026-05-01 01:47:40+00:00,2026-05-07 16:20:18+00:00,1,6,1
+4362336291,65438,BUG: Period.strftime crashes on Windows for invalid format strings,closed,2026-05-01 01:45:09+00:00,2026-05-03 17:36:43+00:00,1,2,1
+4362326349,65437,BUG: DataFrame repr raising TypeError for structured-dtype column (GH-55011),closed,2026-05-01 01:41:25+00:00,2026-05-01 16:14:16+00:00,1,0,1
+4360912786,65436,Account for privatization of matplotlib `Formatter.locs` attribute,closed,2026-04-30 20:01:27+00:00,2026-05-03 15:21:05+00:00,6,2,1
+4360091389,65435,BUG: Timestamp with 1-3 digit BC year silently drops leading '-' (GH-55954),closed,2026-04-30 17:38:11+00:00,2026-05-03 17:38:52+00:00,1,3,1
+4360072271,65434,CLN: fill in placeholder GH refs in test comments,closed,2026-04-30 17:34:35+00:00,2026-05-01 16:08:41+00:00,1,0,1
+4359754904,65433,CI: Update pixi.lock,closed,2026-04-30 16:40:03+00:00,2026-05-02 17:16:51+00:00,4,2,1
+4359713392,65432,"DEPR: %n directive in Period.strftime, use %N instead",closed,2026-04-30 16:33:11+00:00,2026-05-17 13:24:27+00:00,1,16,1
+4359661383,65431,BUG: restore array-level state and avoid object roundtrip in DataFrame._append_internal,closed,2026-04-30 16:24:55+00:00,2026-05-07 13:03:12+00:00,1,6,1
+4359632980,65430,CI: lowercase types-pymysql/types-pyyaml to fix mamba 2.6.0 shard lookup,closed,2026-04-30 16:20:12+00:00,2026-05-01 11:26:45+00:00,4,0,1
+4359535659,65429,REF: drop freq attribute from DTA/TDA arrays (GH-24566),closed,2026-04-30 16:06:07+00:00,2026-04-30 16:58:15+00:00,1,0,1
+4357481970,65427,DOC: Improve to_numeric return type documentation clarity,closed,2026-04-30 10:52:27+00:00,2026-05-06 17:27:31+00:00,1,6,1
+4357046831,65426,DOC: fix name of Bamboo weekly author,closed,2026-04-30 09:43:53+00:00,2026-04-30 20:19:48+00:00,1,0,1
+4356621056,65425,Backport PR #65399 on branch 3.0.x (DOC: fix source link for classes in the reference docs),closed,2026-04-30 08:39:27+00:00,2026-04-30 09:20:26+00:00,0,0,1
+4356543144,65424,CI: explicitly ignore .pixi/ for update workflow,closed,2026-04-30 08:27:30+00:00,2026-04-30 16:25:26+00:00,1,0,1
+4354002372,65423,DOC: document Timestamp.timestamp() divergence from stdlib for tz-naive (GH-50298),closed,2026-04-29 22:17:02+00:00,2026-04-30 15:29:13+00:00,2,0,1
+4353926549,65422,"TST: add regression test for Timestamp(fold=..., tz=<str>) (GH-55932)",closed,2026-04-29 21:59:35+00:00,2026-05-07 16:21:33+00:00,1,7,1
+4353775497,65421,CLN: drop stale FIXME for closed pyperclip#55 in clipboard module,closed,2026-04-29 21:27:08+00:00,2026-04-30 16:54:13+00:00,1,0,1
+4353517251,65418,BUG: DataFrame.loc setitem-with-expansion preserves dtype for list-like values (GH-42099),closed,2026-04-29 20:36:27+00:00,2026-05-06 18:04:56+00:00,1,6,1
+4353512837,65417,CLN: remove dead JoinUnit._is_valid_na_for code in internals.concat,closed,2026-04-29 20:35:30+00:00,2026-04-30 16:53:34+00:00,1,0,1
+4352365802,65416,CLN: Replace stale 0.10.1 FIXME in use_dynamic_x,closed,2026-04-29 17:13:50+00:00,2026-04-30 16:52:32+00:00,1,0,1
+4351981411,65415,Backport PR #65411 on branch 3.0.x (CLN: only try to normalize pytz in index when pytz is installed),closed,2026-04-29 16:06:50+00:00,2026-04-30 06:44:34+00:00,0,0,1
+4351113466,65413,BUG: Categorical.map with defaultdict replaces NA with NaN,closed,2026-04-29 13:57:51+00:00,2026-05-06 00:46:18+00:00,5,6,1
+4350572094,65411,CLN: only try to normalize pytz in index when pytz is installed,closed,2026-04-29 12:36:40+00:00,2026-04-29 16:06:06+00:00,1,0,1
+4350549277,65410,TST: also convert str index to object in pyarrow->pandas conversion for infer_string=0 CI,closed,2026-04-29 12:33:07+00:00,2026-05-06 16:59:25+00:00,1,7,1
+4349598311,65409,PERF: skip to_datetime cache=True overhead for no-help input shapes (GH#65380),closed,2026-04-29 10:05:35+00:00,2026-05-08 21:18:27+00:00,1,9,1
+4348783872,65407,[backport 3.0.x] BUG: prevent using numexpr 2.10 with newer numpy to avoid silent wrong results (#65400),closed,2026-04-29 07:51:07+00:00,2026-04-29 08:51:48+00:00,0,0,1
+4348776238,65406,[backport 3.0.x] Parquet IO: also use zoneinfo timezones by default even when pyarrow uses pytz (#65134),closed,2026-04-29 07:49:38+00:00,2026-04-29 08:51:36+00:00,0,0,1
+4347115250,65405,DOC: Remove old tutorials,closed,2026-04-29 00:35:03+00:00,2026-05-05 22:32:00+00:00,2,6,1
+4346999784,65404,Backport PR #65403 on branch 3.0.x (CI: pin pyodide-build to fix venv pip wrapper crash),closed,2026-04-28 23:57:15+00:00,2026-04-29 07:52:52+00:00,0,0,1
+4345315263,65403,CI: pin pyodide-build to fix venv pip wrapper crash,closed,2026-04-28 18:18:16+00:00,2026-04-28 23:56:43+00:00,1,0,1
+4345163465,65402,TST: assert pyarrow's quoting ValueError instead of xfailing,closed,2026-04-28 17:49:38+00:00,2026-04-28 18:58:09+00:00,1,0,1
+4344227197,65401,"Backport PR #65147 on branch 3.0.x (BUG: fix `str.replace("""", ..)` with empty pattern hanging when using pyarrow)",closed,2026-04-28 15:12:39+00:00,2026-04-29 08:18:19+00:00,0,0,1
+4344218553,65400,BUG: prevent using numexpr 2.10 with newer numpy to avoid silent wrong results,closed,2026-04-28 15:11:12+00:00,2026-04-28 17:50:37+00:00,5,0,1
+4344106982,65399,DOC: fix source link for classes in the reference docs,closed,2026-04-28 14:53:48+00:00,2026-04-30 08:39:18+00:00,1,1,1
+4343671649,65398,[backport 3.0.x] CI: fix numpy nightly DeprecationWarning for generic-unit datetime64/timedelta64 (#65340),closed,2026-04-28 13:50:16+00:00,2026-04-28 15:11:52+00:00,0,0,1
+4343540715,65397,"[backport 3.0.x] BUG: fix ""1 ,"" converting to 1 by `read_csv` c engine with thousands separator (#64631)",closed,2026-04-28 13:31:08+00:00,2026-04-28 15:54:43+00:00,0,0,1
+4341244241,65396,Bug/57962 loc iterable assignment,closed,2026-04-28 07:06:57+00:00,2026-05-14 17:46:45+00:00,4,16,1
+4340373381,65395,PERF: speed up to_offset string parsing,closed,2026-04-28 03:25:29+00:00,2026-05-07 20:53:53+00:00,1,9,1
+4340351445,65394,CLN: drop stale FIXME in ObjectStringArrayMixin._str_map,closed,2026-04-28 03:19:19+00:00,2026-04-28 17:52:36+00:00,1,0,1
+4340297321,65392,CLN: remove stale cython3 conditional-nogil TODO in rank_sorted_1d,closed,2026-04-28 03:05:28+00:00,2026-04-28 16:45:36+00:00,0,0,1
+4340294587,65391,BUG: infer_dtype treats pd.NA as a generic null in TemporalValidator,closed,2026-04-28 03:04:54+00:00,2026-04-28 17:56:47+00:00,1,0,1
+4340287192,65390,CLN: remove _offset_map cache in offsets.pyx,closed,2026-04-28 03:03:12+00:00,2026-04-28 18:00:03+00:00,1,0,1
+4340240655,65388,PERF: Speed up Timedelta.total_seconds,closed,2026-04-28 02:51:59+00:00,2026-04-28 18:46:46+00:00,1,0,1
+4340210410,65387,CLN: point cython3 TODOs at upstream cython#2485,closed,2026-04-28 02:45:10+00:00,2026-04-28 17:55:23+00:00,0,0,1
+4340179869,65386,REF: cimport npy_datetimestruct and NPY_DATETIMEUNIT directly from numpy,closed,2026-04-28 02:37:19+00:00,2026-04-28 18:01:42+00:00,0,0,1
+4340116927,65385,"DOC: drop stale ""experimental"" notes and fix tab-completion list",closed,2026-04-28 02:19:55+00:00,2026-04-29 08:20:47+00:00,0,1,1
+4340064567,65383,TYP: tighten Timestamp/Timedelta round/floor/ceil return types,closed,2026-04-28 02:07:15+00:00,2026-04-28 18:50:11+00:00,1,0,1
 4337604979,65380,PERF: skip to_datetime cache=True overhead for input shapes where it cannot help,closed,2026-04-27 17:21:00+00:00,2026-05-08 21:18:28+00:00,1,11,1
+4336886283,65379,CI: allow running update-pixi-lock workflow on demand,closed,2026-04-27 15:26:11+00:00,2026-04-27 16:20:53+00:00,1,0,1
+4334952140,65377,BUG: nansem with mask + skipna=False + axis returns scalar nan instead of array,closed,2026-04-27 10:19:29+00:00,2026-04-27 10:27:57+00:00,1,0,1
+4334484285,65376,Bump scientific-python/upload-nightly-action from 0.6.3 to 0.6.4,closed,2026-04-27 09:05:15+00:00,2026-04-27 17:35:08+00:00,0,0,1
 4332953561,65375,BUG:  Index `&` operator performs bitwise AND instead of set intersection for int64 dtype in v2.2.3,closed,2026-04-27 03:50:22+00:00,2026-04-27 10:44:28+00:00,4,0,1
+4332739057,65374,DOC: Add Pandas Workout book and Bamboo Weekly,closed,2026-04-27 02:33:17+00:00,2026-04-27 21:09:31+00:00,2,0,1
+4330957458,65371,"DOC: fix to_numeric docstring - add Index/scalar return types, fix dtype_backend description",closed,2026-04-26 13:20:35+00:00,2026-05-05 21:32:50+00:00,2,9,1
+4330743595,65370,BUG: str.replace hangs indefinitely on empty pattern with PyArrow backend,closed,2026-04-26 11:31:52+00:00,2026-04-29 16:31:56+00:00,5,3,1
 4329507850,65369,"DOC: `to_numeric` ""Returns"" is missing Index and scalars, may have other problems",closed,2026-04-25 23:30:58+00:00,2026-05-05 21:32:51+00:00,1,9,1
+4328148463,65367,Test: Add regression test for DataFrame.sum() with negative values and NaN,closed,2026-04-25 13:00:30+00:00,2026-05-07 02:24:59+00:00,1,11,1
+4325660506,65363,PERF: speed up read_sas for full-precision numeric columns,closed,2026-04-24 21:22:16+00:00,2026-04-28 18:59:43+00:00,1,3,1
 4323799291,65361,ENH: Introduce SECURITY.md,closed,2026-04-24 15:03:57+00:00,2026-04-28 21:35:06+00:00,2,4,1
+4323411510,65360,BUG: Fix df.query() with 'in' operator and column references (#65357),closed,2026-04-24 13:57:29+00:00,2026-05-03 13:50:52+00:00,1,8,1
+4323205219,65359,CI: fix pixi.lock update workflow to handle PyPI deps,closed,2026-04-24 13:24:00+00:00,2026-04-27 15:20:29+00:00,1,3,1
 4321777112,65357,"BUG: df.query() returning an empty dataframe on this condition - col1 in (col2, col3)",closed,2026-04-24 08:53:11+00:00,2026-05-03 13:50:53+00:00,0,9,1
+4321647138,65356,BUG: regression in bdate_range for end on weekend,closed,2026-04-24 08:26:45+00:00,2026-04-28 02:35:44+00:00,1,3,1
+4320039675,65354,DEPR: followup warn on .at setitem when a new column expands the frame,closed,2026-04-24 02:10:37+00:00,2026-04-28 21:12:34+00:00,1,4,1
+4319612167,65352,PERF: Use SSE2 and Neon instructions to reduce moments,closed,2026-04-24 00:13:19+00:00,2026-04-29 21:16:28+00:00,3,5,1
+4317575342,65348,Backport PR #65346 on branch 3.0.x (CI: avoid pyarrow 25.0 for typing),closed,2026-04-23 17:06:45+00:00,2026-04-24 06:43:51+00:00,0,0,1
+4317014652,65346,CI: avoid pyarrow 25.0 for typing,closed,2026-04-23 15:19:54+00:00,2026-04-23 17:06:16+00:00,1,0,1
+4314309778,65344,DOC: clarify tz_localize does not alter date/time representation (#55955),closed,2026-04-23 07:34:20+00:00,2026-05-08 00:15:35+00:00,3,14,1
+4313549344,65343,BUG: Fix AttributeError in concat when result is Series,closed,2026-04-23 04:46:17+00:00,2026-04-25 15:05:15+00:00,2,2,1
+4313270325,65342,BUG: fix Series.combine_first crash when names are Timestamps (#65333),closed,2026-04-23 03:24:49+00:00,2026-05-03 13:22:25+00:00,1,10,1
+4312097875,65341,DOC: document TextFileReader in the API reference,closed,2026-04-22 22:04:22+00:00,2026-04-28 19:06:30+00:00,1,5,1
+4312095984,65340,CI: fix numpy nightly DeprecationWarning for generic-unit datetime64/timedelta64,closed,2026-04-22 22:03:52+00:00,2026-04-23 16:53:12+00:00,3,0,1
+4312094316,65339,DOC: clarify resolution-dependence of Timestamp/Timedelta min/max/resolution,closed,2026-04-22 22:03:23+00:00,2026-04-29 16:10:46+00:00,2,6,1
+4312066184,65338,DOC: clarify that read_hdf only reads pandas-written HDF5 files,closed,2026-04-22 21:55:43+00:00,2026-04-23 17:19:17+00:00,1,0,1
+4311920469,65337,PERF: avoid dtype.name in DataFrame block grouping,closed,2026-04-22 21:18:58+00:00,2026-05-06 18:03:44+00:00,1,13,1
+4310778779,65336,BUG: rename() silently downcasts nullable ExtensionArray index dtypes to NumPy,closed,2026-04-22 17:36:46+00:00,2026-04-22 19:19:49+00:00,1,0,1
+4310559361,65335,ENH: Suggest alternative package managers in optional dependency error,closed,2026-04-22 16:54:48+00:00,2026-05-11 21:17:22+00:00,1,19,1
+4310277156,65334,[backport 3.0.x] REGR: restore rank() for ExtensionArrays with custom values for sorting (#64976),closed,2026-04-22 16:03:07+00:00,2026-04-23 08:27:19+00:00,0,0,1
 4309613683,65333,BUG: Series.combine_first fails when names are of type Timestamp,closed,2026-04-22 14:13:57+00:00,2026-05-03 13:22:26+00:00,0,10,1
+4307862245,65332,"BUG: fix empty groupby(..., as_index=False).apply(...) index name inconsistency",closed,2026-04-22 08:56:08+00:00,2026-05-05 21:34:23+00:00,3,13,1
+4307425805,65331,CI: make wheel builds compilation more verbose,closed,2026-04-22 07:32:08+00:00,2026-04-24 07:04:04+00:00,0,1,1
+4306937638,65330,BUG: preserve nullable index dtype in rename (GH#65315),closed,2026-04-22 05:40:30+00:00,2026-04-22 15:57:18+00:00,2,0,1
+4306634945,65328,BUG: disable numexpr for incompatible numpy>=2.3 + numexpr<2.11 combos,closed,2026-04-22 04:06:23+00:00,2026-04-28 14:37:48+00:00,1,6,1
+4306561905,65327,BUG: preserve ExtensionArray dtype in Index._transform_index for rename,closed,2026-04-22 03:39:27+00:00,2026-04-22 15:57:40+00:00,2,0,1
+4305900938,65325,DOC: fix grammar in the .dt accessor section,closed,2026-04-21 23:48:23+00:00,2026-04-22 00:44:58+00:00,0,0,1
+4305888912,65323,DOC:Missing r in your,closed,2026-04-21 23:44:03+00:00,2026-04-22 00:45:21+00:00,0,0,1
+4305710260,65322,REF: relocate _freq storage from DTA/TDA arrays to Index (GH#24566),closed,2026-04-21 22:49:21+00:00,2026-04-29 16:20:55+00:00,1,7,1
+4305374850,65321,BUG: Fix deprecation warning stacklevel in option_context (GH#63235),closed,2026-04-21 21:25:39+00:00,2026-04-22 04:43:19+00:00,1,0,1
+4303807513,65319,[backport 3.0.x] BUG: fix FloatingArray.astype(str) crash with distinguish_nan_and_na=True (#65038),closed,2026-04-21 15:55:48+00:00,2026-04-21 16:46:58+00:00,0,0,1
+4301622713,65318,BUG/TST: add test for _cast_pointwise_result robustness + fix some cases,closed,2026-04-21 09:26:56+00:00,2026-04-21 17:55:42+00:00,1,0,1
+4299900558,65316,BUG: Preserve nullable index dtype in `_transform_index`,closed,2026-04-21 02:30:23+00:00,2026-04-29 08:29:55+00:00,1,8,1
 4299890429,65315,BUG: DataFrame/Series.rename silently downcasts nullable index/column dtypes to NumPy dtypes,closed,2026-04-21 02:26:55+00:00,2026-04-29 08:29:56+00:00,2,8,1
+4298686384,65313,[backport 3.0.x] BUG: fix to_timedelta ignoring unit for mixed round/non-round floats (#65170),closed,2026-04-20 21:02:10+00:00,2026-04-21 15:45:42+00:00,1,0,1
+4298007262,65312,DOC: fix run-on sentence in invalid plot kind error message,closed,2026-04-20 19:01:45+00:00,2026-04-21 02:42:02+00:00,0,0,1
+4294378239,65310,Bump github/codeql-action from 4.35.1 to 4.35.2,closed,2026-04-20 08:51:05+00:00,2026-04-20 15:39:53+00:00,0,0,1
+4294376255,65309,Bump actions/setup-node from 6.3.0 to 6.4.0,closed,2026-04-20 08:50:46+00:00,2026-04-20 15:39:15+00:00,0,0,1
+4293027215,65306,BUG: Fix AttributeError for str[i]/str[slice] on ArrowExtensionArray,closed,2026-04-20 04:08:09+00:00,2026-04-20 04:39:16+00:00,4,0,1
+4292811641,65305,BUG: Fix str.replace() hanging on empty pattern for Arrow-backed strings,closed,2026-04-20 02:54:57+00:00,2026-04-20 03:37:34+00:00,4,0,1
+4292734371,65304,"BUG: Fix DataFrame.agg(list, numeric_only=True) including non-numeric columns (GH#65218)",closed,2026-04-20 02:26:13+00:00,2026-04-20 02:28:07+00:00,1,0,1
+4292700969,65303,BUG: Fix silent __setitem__ discard for MultiIndex with falsy sub-column label (GH#65118),closed,2026-04-20 02:14:04+00:00,2026-04-20 02:18:00+00:00,1,0,1
+4291871144,65302,PERF: preserve block memory layout in Block.copy (GH#60469),closed,2026-04-19 20:00:33+00:00,2026-04-21 17:22:17+00:00,1,1,1
+4291820320,65301,BUG: pivot_table margins with EA dtype that cannot hold NA (GH#55484),closed,2026-04-19 19:38:52+00:00,2026-05-07 17:34:21+00:00,1,17,1
+4291674773,65300,CI: Run code checks with Pixi,closed,2026-04-19 18:36:41+00:00,2026-05-03 02:47:49+00:00,1,13,1
+4291510014,65299,BUG: Improve error message when ExtensionDtype subclass missing 'name' attribute,closed,2026-04-19 17:20:02+00:00,2026-05-11 21:18:06+00:00,2,22,1
+4291323016,65297,REF: remove redundant BaseMaskedArray.map override,closed,2026-04-19 15:56:41+00:00,2026-04-20 15:47:37+00:00,1,0,1
+4291321001,65296,REF: simplify _get_indexer_strict and related indexing methods,closed,2026-04-19 15:55:40+00:00,2026-04-20 15:39:32+00:00,0,0,1
+4291233456,65295,PERF: unroll take_1d/take_2d inner loops with contig fast path,closed,2026-04-19 15:17:48+00:00,2026-05-16 14:17:36+00:00,1,26,1
+4290134110,65292,BUG: Add _str_getitem to ArrowStringArrayMixin,closed,2026-04-19 06:38:43+00:00,2026-04-19 20:08:39+00:00,1,0,1
+4289766695,65289,BUG: Fix DataFrame.agg with list of functions and numeric_only=True,closed,2026-04-19 02:50:00+00:00,2026-04-19 18:59:10+00:00,1,0,1
+4289740205,65288,BUG: Fix formatters applied to wrong columns in truncated DataFrame.to_string (GH#35410),closed,2026-04-19 02:32:22+00:00,2026-04-20 15:12:49+00:00,1,1,1
+4289595046,65285,REF: continue moving freq management off DatetimeArray/TimedeltaArray (GH#24566),closed,2026-04-19 00:49:23+00:00,2026-04-20 15:52:31+00:00,1,1,1
+4289296606,65282,"TST/BUG: set __module__ on pandas.io.{json,parsers} public API",closed,2026-04-18 22:03:11+00:00,2026-04-19 19:31:10+00:00,0,0,1
+4289223141,65281,CI: Ensure PANDAS_VERSION is set in docbuild workflow,closed,2026-04-18 21:28:45+00:00,2026-04-18 21:42:21+00:00,0,0,1
+4288848250,65279,PERF: short-circuit sort_index(level=...) on monotonic non-MultiIndex,closed,2026-04-18 18:33:18+00:00,2026-04-21 17:14:57+00:00,1,2,1
+4288669223,65276,"REF: remove DatetimeArray._with_freq, further freq management cleanup (GH#24566)",closed,2026-04-18 17:12:53+00:00,2026-04-18 21:10:02+00:00,1,0,1
+4288614911,65275,DOC: clarify that column-level attrs are not supported with Copy-on-Write,closed,2026-04-18 16:54:40+00:00,2026-05-06 17:38:13+00:00,1,18,1
+4286243773,65274,BUG: SeriesGroupBy.agg returns MultiIndex Series instead of DataFrame,closed,2026-04-18 01:33:07+00:00,2026-04-24 20:00:47+00:00,4,6,1
+4285650447,65273,BUG: fix segfault in Rolling method='table' sum/mean/median/min/max,closed,2026-04-17 22:27:30+00:00,2026-04-18 21:08:35+00:00,1,0,1
+4285456905,65272,PERF: parallelize nancorr (POC for cython.prange),closed,2026-04-17 21:35:18+00:00,2026-04-20 14:53:06+00:00,1,2,1
+4283715450,65271,CLN: too-verbose claude comments and whatsnew entries,closed,2026-04-17 15:35:37+00:00,2026-04-17 16:00:36+00:00,1,0,1
+4283537046,65270,DEPR: ExtensionArray._from_scalars,closed,2026-04-17 15:06:24+00:00,2026-04-19 15:59:05+00:00,0,2,1
+4281256094,65269,enh: normaized col added,closed,2026-04-17 08:35:05+00:00,2026-04-17 15:42:45+00:00,1,0,1
+4279508527,65268,BUG: Index.take respects fill_value and allows fills on integer dtypes,closed,2026-04-17 01:18:41+00:00,2026-04-27 20:54:17+00:00,2,10,1
+4279051112,65267,TYP: accept Mapping in Styler.format formatter parameter,closed,2026-04-16 23:13:41+00:00,2026-05-06 20:58:37+00:00,1,19,1
+4278605723,65266,REF: move more freq management from DatetimeArray/TimedeltaArray to Index (GH#24566),closed,2026-04-16 21:23:52+00:00,2026-04-18 16:58:25+00:00,1,1,1
+4278427719,65265,REF: Index.where/putmask delegate to Series.where,closed,2026-04-16 20:43:44+00:00,2026-05-08 17:59:21+00:00,1,21,1
+4278397342,65264,BUG: fix loc setitem with list of tuples on object-dtype column,closed,2026-04-16 20:37:12+00:00,2026-04-17 16:02:12+00:00,1,0,1
+4278198521,65263,TST: add test for DataFrame.update with mixed index types and partial…,closed,2026-04-16 19:59:13+00:00,2026-05-11 21:18:54+00:00,1,25,1
+4278083598,65262,Backport PR #65255 on branch 3.0.x (BUG: fix addition of ArrowDtype with string vs large_large types),closed,2026-04-16 19:35:44+00:00,2026-04-16 20:48:20+00:00,0,0,1
+4276207534,65261,[3.0.x] CI: fix test_dataframe_to_sql_empty for non-infer_string and newer adbc,closed,2026-04-16 13:57:24+00:00,2026-04-16 16:49:49+00:00,0,0,1
+4275971307,65260,[backport 3.0.x] BUG: read parquet files with older pytz (DEP: keep lower pytz minimum version) (#65133),closed,2026-04-16 13:17:47+00:00,2026-04-16 16:09:26+00:00,0,0,1
+4275944213,65259,Backport PR #65228 on branch 3.0.x (CI: set PKG_CONFIG_PATH to fix broken system Python headers),closed,2026-04-16 13:12:51+00:00,2026-04-16 13:53:25+00:00,0,0,1
+4275933437,65258,DOC: move misplaced whatsnew note for GH-64836,closed,2026-04-16 13:10:50+00:00,2026-04-16 13:58:47+00:00,0,0,1
+4275910021,65257,[backport 3.0.x] CI: Fix numpy nightly build (#65197),closed,2026-04-16 13:06:28+00:00,2026-04-16 13:52:59+00:00,0,0,1
+4275871902,65256,Backport PR #64988 on branch 3.0.x (BUG: Fix pyarrow-backed string dtype addition with missing values),closed,2026-04-16 12:59:31+00:00,2026-04-16 13:58:17+00:00,0,0,1
+4275829828,65255,BUG: fix addition of ArrowDtype with string vs large_large types,closed,2026-04-16 12:51:55+00:00,2026-04-16 19:35:13+00:00,1,0,1
+4265319179,65246,BUG: improve error message for slice_locs with NaN in index,closed,2026-04-14 23:30:10+00:00,2026-04-15 17:08:10+00:00,0,0,1
+4265307584,65245,BUG: MultiIndex slicing with datetime.date raises TypeError,closed,2026-04-14 23:27:19+00:00,2026-04-17 00:49:36+00:00,4,2,1
+4265290812,65244,BUG: fix use-after-free in PyObjectHashTable,closed,2026-04-14 23:23:19+00:00,2026-04-17 15:49:52+00:00,2,2,1
+4265140293,65241,BUG: DataFrame.loc setitem with list-like value on single-column EA DataFrame,closed,2026-04-14 22:44:22+00:00,2026-04-21 17:23:23+00:00,1,6,1
+4265135412,65240,BUG: DataFrame.at/iat fail to store list-like values in a single cell,closed,2026-04-14 22:43:16+00:00,2026-04-20 20:33:33+00:00,1,5,1
+4265122009,65239,BUG: fix .loc with tuple key on MultiIndex with IntervalIndex level,closed,2026-04-14 22:40:22+00:00,2026-04-21 17:36:08+00:00,1,6,1
+4265023938,65235,BUG: DataFrame.loc setitem expands index when no columns,closed,2026-04-14 22:15:27+00:00,2026-04-22 16:28:22+00:00,1,7,1
+4265023937,65234,BUG: MultiIndex.get_loc returns scalar for unique key in non-unique index,closed,2026-04-14 22:15:27+00:00,2026-04-21 18:41:42+00:00,1,6,1
+4264994493,65233,REF: stop DatetimeArray/TimedeltaArray methods from reading self.freq,closed,2026-04-14 22:07:47+00:00,2026-04-16 17:50:05+00:00,1,1,1
+4264985227,65232,TST: add tests for .loc setitem with non-unique string index,closed,2026-04-14 22:05:16+00:00,2026-04-16 17:56:18+00:00,1,1,1
+4264951821,65230,BUG: MultiIndex.loc raises KeyError for string keys on numeric levels,closed,2026-04-14 21:56:22+00:00,2026-04-16 17:41:46+00:00,1,1,1
+4264940651,65229,BUG: DataFrame.loc preserves original index name when key is an Index,closed,2026-04-14 21:53:26+00:00,2026-04-20 20:20:15+00:00,0,5,1
+4264928347,65228,CI: set PKG_CONFIG_PATH to fix broken system Python headers,closed,2026-04-14 21:50:19+00:00,2026-04-15 15:54:55+00:00,6,0,1
 4264861734,65227,"BUG: [REGRESSION] to_csv cannot handle FloatingArrays with np.nan, even with distinguish_nan_and_na=True",closed,2026-04-14 21:35:19+00:00,2026-04-21 15:51:08+00:00,2,6,1
 4263954687,65226,CI regression: Doc Build and pre-commit jobs failing across multiple PRs,closed,2026-04-14 18:16:16+00:00,2026-04-15 15:54:57+00:00,0,0,1
+4263746237,65225,REF: consolidate _constructor_sliced_from_mgr call sites into _ixs,closed,2026-04-14 17:32:12+00:00,2026-04-16 17:37:13+00:00,1,2,1
+4263727017,65224,TST: add test for .at with incompatible Decimal type,closed,2026-04-14 17:28:16+00:00,2026-04-17 00:47:32+00:00,0,2,1
 4263477706,65223,BUG: 1-element pd.NA boolean arrays are all() but not any(),closed,2026-04-14 16:34:06+00:00,2026-04-14 21:19:26+00:00,2,0,1
+4263343250,65222,ENH: make option_context thread-safe via contextvars,closed,2026-04-14 16:07:21+00:00,2026-04-20 15:25:01+00:00,0,5,1
+4263199860,65221,BUG: DataFrame.at raises TypeError with partial date string on MultiIndex,closed,2026-04-14 15:43:07+00:00,2026-04-16 17:47:36+00:00,1,2,1
 4261193989,65220,BUG: `operation 'add' not supported for dtype 'string[pyarrow]' with dtype 'str'`,closed,2026-04-14 09:45:48+00:00,2026-04-16 19:35:14+00:00,3,2,1
+4258554679,65219,BUG: `DataFrame.agg` with list-like funcs reintroduces filtered columns as `NaN` with `numeric_only=True`,closed,2026-04-13 23:49:54+00:00,2026-04-30 01:35:35+00:00,5,16,1
 4258548072,65218,"BUG: `DataFrame.agg([...], numeric_only=True)` returns `NaN` for non-numeric columns instead of excluding them",closed,2026-04-13 23:48:06+00:00,2026-04-30 01:35:36+00:00,0,16,1
+4258373225,65217,BUG: DataFrame.duplicated() loses index when DataFrame has no columns,closed,2026-04-13 23:00:00+00:00,2026-04-14 16:29:47+00:00,1,0,1
+4258302000,65216,BLD: remove deprecated option cpython-freethreading,closed,2026-04-13 22:39:41+00:00,2026-04-14 18:49:35+00:00,1,0,1
+4257605737,65215,TST: Add regression test for read_parquet null batches (#55731),closed,2026-04-13 20:13:50+00:00,2026-05-08 18:59:09+00:00,2,24,1
+4257171631,65214,TYP: fix mypy errors in get_values_for_csv,closed,2026-04-13 18:54:37+00:00,2026-04-13 20:28:17+00:00,0,0,1
 4257146085,65213,BUILD: meson.build fails in Pandas 2.3.1 as of earlier today due to meson 1.11 update,closed,2026-04-13 18:49:19+00:00,2026-04-13 22:23:31+00:00,5,0,1
+4256851028,65211,PERF: reduce per-group overhead in groupby.agg with UDFs,closed,2026-04-13 17:55:26+00:00,2026-05-03 13:42:01+00:00,2,19,1
 4256707963,65210,API: Index.take discards fill_value and raises unnecessarily,closed,2026-04-13 17:28:10+00:00,2026-04-27 20:54:18+00:00,2,14,1
+4256462262,65209,REF: stop DatetimeArray methods from reading self.freq,closed,2026-04-13 16:41:24+00:00,2026-04-14 16:31:04+00:00,1,0,1
+4255636459,65208,BUG: loc setitem with duplicate columns and new columns corrupts Data…,closed,2026-04-13 14:29:10+00:00,2026-04-14 21:52:21+00:00,3,1,1
+4252685828,65207,Bump peter-evans/create-pull-request from 8.1.0 to 8.1.1,closed,2026-04-13 08:33:03+00:00,2026-04-13 15:49:41+00:00,0,0,1
+4252685134,65206,Bump pypa/gh-action-pypi-publish from 1.13.0 to 1.14.0,closed,2026-04-13 08:32:59+00:00,2026-04-13 16:03:46+00:00,0,0,1
+4252684799,65204,Bump mymindstorm/setup-emsdk from 15 to 16,closed,2026-04-13 08:32:56+00:00,2026-04-13 15:45:02+00:00,0,0,1
+4252683529,65203,Bump actions/upload-artifact from 7.0.0 to 7.0.1,closed,2026-04-13 08:32:46+00:00,2026-04-13 16:01:17+00:00,0,0,1
+4252683052,65202,Bump actions/github-script from 8.0.0 to 9.0.0,closed,2026-04-13 08:32:41+00:00,2026-04-13 15:42:39+00:00,0,0,1
+4251289498,65201,Backport PR #64836 on branch 3.0.x (BUG: Timedelta.round() raises ZeroDivisionError when internal unit is 's' and target frequency is sub-second),closed,2026-04-13 04:35:20+00:00,2026-04-13 16:52:11+00:00,1,0,1
+4250384675,65199,PERF: pass how=left to _factorize_keys in _left_join_on_index (#65160),closed,2026-04-13 00:05:59+00:00,2026-04-29 00:18:16+00:00,4,16,1
+4249744238,65198,REF: merge PeriodArray branch in get_values_for_csv,closed,2026-04-12 19:55:22+00:00,2026-04-13 16:00:18+00:00,1,0,1
+4249634054,65197,CI: Fix numpy nightly build,closed,2026-04-12 19:31:23+00:00,2026-04-13 15:53:10+00:00,3,0,1
+4249535112,65196,CI: Add contents:write permission to relock workflow; relock,closed,2026-04-12 19:04:14+00:00,2026-04-13 22:25:47+00:00,2,1,1
+4248548031,65193,REF: move freq computation from TimedeltaArray arithmetic to TimedeltaIndex,closed,2026-04-12 15:13:35+00:00,2026-04-12 18:43:44+00:00,1,0,1
+4248525796,65192,PERF: short-circuit array_equivalent and equals comparisons,closed,2026-04-12 15:08:44+00:00,2026-05-09 15:43:52+00:00,1,27,1
+4248510644,65191,REF: stop array from propagating freq in core operations,closed,2026-04-12 15:05:14+00:00,2026-04-13 17:12:33+00:00,1,1,1
 4248251536,65190,ENH: Simplify reading vertically stacked CSV tables,closed,2026-04-12 13:48:48+00:00,2026-04-12 14:46:38+00:00,3,0,1
+4247376224,65189,BUG: improve error message for duplicate columns in pd.melt (GH61475),closed,2026-04-12 09:14:52+00:00,2026-05-08 18:59:43+00:00,2,26,1
+4246167047,65188,BUG: IntervalArray/IntervalIndex constructors upcast sub-64-bit dtypes,closed,2026-04-12 01:26:58+00:00,2026-04-12 18:46:03+00:00,1,0,1
+4246076519,65186,BUG: fix TimedeltaIndex.resolution raising when freq is not set,closed,2026-04-12 00:19:03+00:00,2026-04-12 18:48:29+00:00,1,0,1
+4246018333,65185,"REF: move resolution, resolution_obj from arrays to indexes",closed,2026-04-11 23:36:12+00:00,2026-04-12 20:47:10+00:00,1,0,1
+4246015271,65184,REF: Move _get_arithmetic_result_freq from array to Index,closed,2026-04-11 23:33:52+00:00,2026-04-12 18:39:27+00:00,1,0,1
+4245963248,65182,REF: Move freq-based factorize short-circuit from array to Index,closed,2026-04-11 22:55:57+00:00,2026-04-13 16:02:31+00:00,1,1,1
+4245951803,65180,PERF: fix regression in NumericSeriesIndexing.time_loc_array,closed,2026-04-11 22:49:12+00:00,2026-04-12 18:51:52+00:00,1,0,1
+4245885802,65179,TST: add _honors_copy_keyword to extension test base class,closed,2026-04-11 22:06:41+00:00,2026-04-18 17:01:52+00:00,1,6,1
+4245570774,65178,CLN: Remove unnecessary .view(dtype) in nanops and take,closed,2026-04-11 19:18:59+00:00,2026-04-20 20:24:19+00:00,1,9,1
+4245549247,65177,TST: add mixed-int-string Index to conftest fixtures,closed,2026-04-11 19:07:04+00:00,2026-04-16 17:45:31+00:00,1,4,1
+4245542363,65176,PERF: restore libjoin fastpath for CategoricalIndex intersection/union,closed,2026-04-11 19:03:13+00:00,2026-04-29 21:39:36+00:00,3,18,1
+4245533804,65175,REF: remove GeoDataFrame shim in _constructor_from_mgr,closed,2026-04-11 18:58:18+00:00,2026-04-15 14:26:28+00:00,3,3,1
+4245528765,65174,REF: IntervalArray _validate_setitem_value delegates to _validate_scalar,closed,2026-04-11 18:55:28+00:00,2026-04-16 17:52:05+00:00,1,4,1
+4245493144,65171,REF: remove _Datetime64TZFormatter in favor of _Datetime64Formatter,closed,2026-04-11 18:37:15+00:00,2026-04-12 18:53:26+00:00,1,1,1
+4245476946,65170,BUG: fix to_timedelta ignoring unit for mixed round/non-round floats,closed,2026-04-11 18:28:42+00:00,2026-04-20 20:20:39+00:00,4,9,1
+4245465645,65169,DEPR: convert_dtypes boolean keywords,closed,2026-04-11 18:22:11+00:00,2026-04-19 15:59:18+00:00,0,7,1
+4245449593,65168,BUG: Timedelta kwargs fall back to coarser resolution on overflow,closed,2026-04-11 18:14:01+00:00,2026-04-16 18:01:19+00:00,1,4,1
+4245363893,65167,CI: Add repo flag to GHA cache cleaup workflow,closed,2026-04-11 17:40:03+00:00,2026-04-11 17:58:22+00:00,1,0,1
+4245251844,65166,Backport PR #64294 on branch 3.0.x (TST: mark test_dt64arr_cmp_arraylike_invalid[tzlocal] xfail on Windows),closed,2026-04-11 17:01:17+00:00,2026-04-13 17:13:31+00:00,0,2,1
+4245062099,65165,PERF: Use optimized take path for non-nanosecond datetime64/timedelta64,closed,2026-04-11 15:52:10+00:00,2026-05-16 14:08:28+00:00,2,34,1
+4242375748,65163,DEPR: PeriodIndex.is_full,closed,2026-04-11 00:48:48+00:00,2026-04-19 15:57:56+00:00,0,8,1
+4242371998,65162,REF: Remove TimedeltaArray._from_sequence_not_strict,closed,2026-04-11 00:47:09+00:00,2026-04-11 17:03:56+00:00,1,0,1
+4242344961,65161,REF: remove unused nat_rep parameter from datetime/timedelta formatters,closed,2026-04-11 00:35:32+00:00,2026-04-13 15:57:45+00:00,1,2,1
 4242055305,65160,PERF: Specify `how` when calling `merge._factorize_keys` when possible,closed,2026-04-10 22:35:32+00:00,2026-04-29 00:18:17+00:00,1,18,1
+4241756167,65158,"REF: consolidate __iter__ into TimelikeOps, standardize _validate_setitem_value",closed,2026-04-10 21:12:45+00:00,2026-04-11 17:08:21+00:00,1,0,1
+4241164517,65157,BUG: raise clear TypeError for ExtensionArray.fillna with dict value,closed,2026-04-10 18:56:31+00:00,2026-04-11 17:10:19+00:00,1,0,1
+4241128094,65156,BUG: Series.transform now raises SpecificationError for duplicate function names (GH#54929),closed,2026-04-10 18:48:16+00:00,2026-05-08 19:04:05+00:00,1,28,1
+4241070815,65155,DOC: clarify unit parameter in to_datetime docstring,closed,2026-04-10 18:36:45+00:00,2026-04-11 17:12:08+00:00,1,0,1
+4241000374,65154,DOC: improve MultiIndex.is_monotonic_increasing/decreasing docstrings,closed,2026-04-10 18:22:31+00:00,2026-04-10 21:04:49+00:00,1,0,1
+4240571345,65153,"CLN: ASV config, use rattler for environment solving",closed,2026-04-10 16:53:46+00:00,2026-04-12 18:57:20+00:00,2,2,1
+4239591196,65152,Fix #65140: groupby(as_index=False)[col].ohlc() returns keys in index,closed,2026-04-10 13:50:56+00:00,2026-04-10 15:42:46+00:00,1,0,1
+4239590566,65151,Fix #65150: pd.to_timedelta ignores unit for certain float values,closed,2026-04-10 13:50:51+00:00,2026-04-10 15:42:28+00:00,1,0,1
 4239445724,65150,BUG: pd.to_timedelta ignores unit value for certain float values,closed,2026-04-10 13:25:48+00:00,2026-04-20 20:20:40+00:00,2,10,1
+4239226683,65149,DOC: clarify bool vs int behavior in object-dtype for factorize and unique,closed,2026-04-10 12:44:56+00:00,2026-04-16 19:38:14+00:00,1,6,1
+4238643390,65148,CLN: Update groupby observed defaults,closed,2026-04-10 11:00:54+00:00,2026-04-10 16:10:32+00:00,1,0,1
+4237385505,65147,"BUG: fix `str.replace("""", ..)` with empty pattern hanging when using pyarrow",closed,2026-04-10 07:28:13+00:00,2026-04-28 15:12:08+00:00,3,18,1
+4236631208,65146,CLN: Replace no_default signature with False for allow_duplicates in insert and reset_index,closed,2026-04-10 04:45:16+00:00,2026-04-19 19:59:00+00:00,1,9,1
+4236246740,65145,BUG: SeriesGroupBy.ohlc() ignores as_index=False,closed,2026-04-10 03:04:12+00:00,2026-04-10 03:32:57+00:00,2,0,1
+4235571550,65144,DOC: update GroupBy.sum/min/max See Also sections,closed,2026-04-09 23:54:11+00:00,2026-04-10 10:54:42+00:00,1,0,1
+4235560265,65143,DOC: document required external libraries in read_* I/O docstrings,closed,2026-04-09 23:50:42+00:00,2026-04-10 21:11:22+00:00,1,0,1
+4235557980,65142,DOC: note that DataFrame.values is not writeable,closed,2026-04-09 23:49:54+00:00,2026-04-10 16:12:38+00:00,1,0,1
+4235370895,65141,BUG : update `SeriesGroupBy.ohlc()` to honor `as_index=False`,closed,2026-04-09 22:56:07+00:00,2026-04-10 22:33:19+00:00,1,0,1
 4235362506,65140,"BUG: `groupby(..., as_index=False)[col].ohlc()` returns group keys in the index",closed,2026-04-09 22:54:16+00:00,2026-04-10 22:33:21+00:00,1,0,1
+4234689649,65139,Backport PR #65137 on branch 3.0.x (DOC: update pytz/zoneinfo section in the 3.0.0 whatsnew notes),closed,2026-04-09 20:17:31+00:00,2026-04-09 20:55:25+00:00,0,0,1
+4233691662,65138,DOC: Remove references to 'good first issue',closed,2026-04-09 16:46:48+00:00,2026-04-09 17:47:49+00:00,1,0,1
+4233548446,65137,DOC: update pytz/zoneinfo section in the 3.0.0 whatsnew notes,closed,2026-04-09 16:17:16+00:00,2026-04-09 20:16:51+00:00,1,0,1
+4233253404,65135,BUG: Fix str.replace with empty pattern hanging on pyarrow backend,closed,2026-04-09 15:19:52+00:00,2026-04-30 09:30:45+00:00,6,20,1
+4232833457,65134,Parquet IO: also use zoneinfo timezones by default even when pyarrow uses pytz,closed,2026-04-09 14:09:16+00:00,2026-04-28 17:47:53+00:00,4,19,1
+4231037794,65133,BUG: read parquet files with older pytz (DEP: keep lower pytz minimum version),closed,2026-04-09 09:20:10+00:00,2026-04-10 16:56:18+00:00,7,1,1
+4230572250,65132,BLD: ensure to include subprojects (fast_float) in source distributions,closed,2026-04-09 08:04:59+00:00,2026-04-09 15:30:51+00:00,1,0,1
+4230458325,65131,BUG: Raise ValueError for non-boolean numeric_only in DataFrame/Series reductions (GH#53098),closed,2026-04-09 07:47:45+00:00,2026-04-10 17:37:36+00:00,3,1,1
+4229234264,65130,DOC: Replace XXX with Note in the code comments,closed,2026-04-09 03:35:48+00:00,2026-04-09 15:33:48+00:00,1,0,1
+4228680299,65129,DOC: Fix non-standard default value formatting in Grouper docstring,closed,2026-04-09 01:03:22+00:00,2026-04-10 00:29:27+00:00,1,0,1
+4228052431,65128,CLN: Import _global_config as config,closed,2026-04-08 22:20:40+00:00,2026-04-09 11:43:12+00:00,5,0,1
+4225482816,65125,DOC: clarify hash_pandas_object index behavior with examples,closed,2026-04-08 14:59:07+00:00,2026-04-09 15:35:39+00:00,1,1,1
+4225479307,65124,DOC: clarify that tz_localize(ambiguous='infer') requires monotonic timestamps,closed,2026-04-08 14:58:37+00:00,2026-04-09 15:47:47+00:00,1,1,1
+4225474972,65123,DOC: clarify that ExtensionArray.take does not support scalar indices,closed,2026-04-08 14:57:59+00:00,2026-04-09 15:48:47+00:00,1,1,1
 4225335006,65122,ENH: Add DataFrame.memory_report() for actionable dtype optimization suggestions,closed,2026-04-08 14:35:08+00:00,2026-04-09 18:23:29+00:00,2,1,1
+4224168540,65121,BUG: infer_dtype skipna ignored for Period and Interval (GH#64196),closed,2026-04-08 11:30:54+00:00,2026-04-20 14:26:16+00:00,2,12,1
+4223885862,65119,FIX: silent data loss in MultiIndex __setitem__ with object-dtype level,closed,2026-04-08 10:37:58+00:00,2026-05-18 06:12:06+00:00,7,39,1
+4221700567,65116,Add warning when DataFrame.update has no matching indices due to dtyp…,closed,2026-04-08 02:34:23+00:00,2026-04-09 22:17:34+00:00,1,1,1
+4221616973,65115,BUG: .dt.seconds Discrepancy Between NumPy and PyArrow Timedelta Dtypes,closed,2026-04-08 02:07:40+00:00,2026-05-13 23:27:25+00:00,1,35,1
+4216587616,65111,ENH: Add recursive parameter to StructAccessor.explode(),closed,2026-04-07 08:58:08+00:00,2026-04-09 22:14:15+00:00,1,2,1
+4216288105,65110,DOC: improve cheatsheet README wording,closed,2026-04-07 07:57:15+00:00,2026-04-07 15:09:04+00:00,0,0,1
+4215618582,65109,ENH/BUG: Utilize _values_for_json in Series.to_json,closed,2026-04-07 05:23:06+00:00,2026-04-08 01:54:43+00:00,0,0,1
+4214789807,65108,DOC: Add note about floating point precision in CSV read/write (#13159),closed,2026-04-07 00:44:30+00:00,2026-04-07 22:38:46+00:00,1,0,1
+4214286314,65107,PERF: skip redundant take_nd in _Unstacker when indexer is identity,closed,2026-04-06 21:59:06+00:00,2026-04-07 17:21:35+00:00,1,0,1
+4214251369,65106,PERF: make mask optional in BaseMaskedArray,closed,2026-04-06 21:49:50+00:00,2026-04-22 21:37:39+00:00,7,15,1
+4214230729,65105,PERF: avoid transpose for axis=1 reductions on multi-block DataFrames,closed,2026-04-06 21:44:19+00:00,2026-04-09 18:14:44+00:00,1,2,1
+4214228459,65104,PERF: use PyArrow compute for month_name/day_name with string dtype,closed,2026-04-06 21:43:44+00:00,2026-04-09 18:12:57+00:00,1,2,1
+4214157116,65103,PERF: use ufunc.reduceat for sorted groupby aggregations,closed,2026-04-06 21:25:16+00:00,2026-05-19 16:23:42+00:00,7,42,1
+4213700887,65101, BUG: `GroupBy.any()`/`all()` returns `NaN` for unobserved categorical groups on bool dtype,closed,2026-04-06 19:38:32+00:00,2026-04-07 13:29:31+00:00,1,0,1
 4213690239,65100,BUG: `GroupBy.any()`/`all()` on NumPy `bool` columns return `NaN` for empty groups and upcast to `float64` instead of `bool`,closed,2026-04-06 19:36:19+00:00,2026-04-07 13:29:33+00:00,0,0,1
+4213560382,65099,ENH: Add replace method to Index (closes #19495),closed,2026-04-06 19:09:22+00:00,2026-04-10 17:28:40+00:00,4,3,1
+4213102564,65095,check dtype kind before monotonic/unique in _maybe_promote_to_rangeindex,closed,2026-04-06 17:37:24+00:00,2026-04-06 18:52:15+00:00,1,0,1
+4213073353,65094,PERF: remove redundant per-column casting loop in _append_internal,closed,2026-04-06 17:31:31+00:00,2026-04-09 18:14:20+00:00,3,3,1
+4212944994,65091,PERF: fast-path factorization for monotonic groupby keys,closed,2026-04-06 17:03:19+00:00,2026-05-25 13:14:09+00:00,1,48,1
+4212787034,65090,[pre-commit.ci] pre-commit autoupdate,closed,2026-04-06 16:30:53+00:00,2026-04-06 18:53:09+00:00,0,0,1
+4212758061,65089,CI: Move permissions block in pixi lock workflow up to job id,closed,2026-04-06 16:23:49+00:00,2026-04-06 17:06:16+00:00,0,0,1
+4210494671,65088,Bump prefix-dev/setup-pixi from 0.9.4 to 0.9.5,closed,2026-04-06 08:21:07+00:00,2026-04-06 15:10:36+00:00,0,0,1
+4210494194,65087,Bump pypa/cibuildwheel from 3.4.0 to 3.4.1,closed,2026-04-06 08:21:02+00:00,2026-04-06 17:04:52+00:00,1,0,1
+4210493632,65086,Bump mymindstorm/setup-emsdk from 14 to 15,closed,2026-04-06 08:20:54+00:00,2026-04-06 15:09:30+00:00,0,0,1
+4208324682,65084,CI: Allow relock workflow to write pull requests,closed,2026-04-05 18:48:20+00:00,2026-04-05 19:37:35+00:00,0,0,1
+4207769794,65083,Refactor source file inspection logic in conf.py,closed,2026-04-05 15:02:15+00:00,2026-04-29 08:22:33+00:00,3,23,1
+4207538192,65082,DOC: Fix incorrect source link for DataFrame due to __module__ override,closed,2026-04-05 13:25:05+00:00,2026-04-28 14:02:22+00:00,1,23,1
+4207531641,65081,BUG: Fix read_html including thead rows for nested tables,closed,2026-04-05 13:21:48+00:00,2026-04-05 14:16:34+00:00,3,0,1
+4206851645,65079,DOC: add missing list orient example to DataFrame.to_dict,closed,2026-04-05 07:34:59+00:00,2026-04-05 18:12:40+00:00,0,0,1
+4206606104,65078,DOC: clarify bool vs int behavior in factorize docstring,closed,2026-04-05 05:36:21+00:00,2026-04-09 22:47:21+00:00,2,4,1
+4206317662,65077,BUG: Fix to_typst creating empty cells for hidden items,closed,2026-04-05 03:08:40+00:00,2026-04-06 02:55:43+00:00,5,0,1
+4205831712,65075,CI: Build documentation using pixi,closed,2026-04-04 21:19:58+00:00,2026-04-18 21:07:22+00:00,3,13,1
+4205564131,65074,CI: Run ASV benchmark test with pixi,closed,2026-04-04 18:39:42+00:00,2026-04-04 20:25:29+00:00,1,0,1
+4205515229,65073,CLN: Remove TRACE macro in tokenizer,closed,2026-04-04 18:14:20+00:00,2026-04-04 19:40:00+00:00,1,0,1
+4205395878,65072,Improve dropna doc,closed,2026-04-04 17:18:38+00:00,2026-04-09 22:15:55+00:00,3,5,1
+4205369379,65071,DOC: Add comprehensive merge join examples for clarity,closed,2026-04-04 17:03:53+00:00,2026-04-23 17:09:35+00:00,1,19,1
+4205300516,65070,DOC: fix typo in timeseries documentation (ns -> us),closed,2026-04-04 16:31:35+00:00,2026-04-04 16:54:33+00:00,1,0,1
 4204959698,65068,DOC: Typo in the webpage docs/getting_started/intro_tutorials/09_timeseries.html,closed,2026-04-04 13:38:42+00:00,2026-04-04 16:54:35+00:00,1,0,1
+4202865216,65061,TST: Add regression test for to_csv with utf-16 encoding,closed,2026-04-04 01:17:28+00:00,2026-04-06 15:33:11+00:00,1,2,1
+4202845320,65060,TST: Add regression test for read_csv memory_map with multi-char sep,closed,2026-04-04 01:07:50+00:00,2026-04-06 15:35:49+00:00,1,2,1
+4202826450,65059,TST: Add regression test for read_csv escapechar round-trip,closed,2026-04-04 00:59:13+00:00,2026-04-06 15:38:21+00:00,1,2,1
+4202825951,65058,TST: Add roundtrip regression test for to_csv with embedded newlines,closed,2026-04-04 00:58:50+00:00,2026-04-04 16:57:30+00:00,1,0,1
+4202759795,65057,BUG: use uint64_t instead of size_t for row counts in CSV parser,closed,2026-04-04 00:33:38+00:00,2026-04-04 18:15:47+00:00,2,0,1
+4202729396,65056,DEPR: deprecate inference of datetime.date objects as datetime64,closed,2026-04-04 00:25:23+00:00,2026-04-09 23:28:51+00:00,2,5,1
+4201404271,65054,PERF: minor optimizations in _libs.algos,closed,2026-04-03 17:07:26+00:00,2026-04-04 17:07:21+00:00,1,0,1
+4199339776,65048,CLN: remove unnecessary usage of option_context with future.infer_string in tests,closed,2026-04-03 08:55:28+00:00,2026-04-09 07:06:16+00:00,1,5,1
+4198065236,65046,PERF: add no_nans fast path in nancorr,closed,2026-04-03 03:26:15+00:00,2026-04-03 16:51:42+00:00,1,0,1
+4197769990,65045,DOC: clarify Series alignment in DataFrame.assign,closed,2026-04-03 01:37:19+00:00,2026-05-06 18:55:46+00:00,1,33,1
+4197698190,65044,DEPR: deprecate lsuffix/rsuffix in DataFrame.join in favor of suffixes,closed,2026-04-03 01:07:11+00:00,2026-04-08 20:52:26+00:00,0,5,1
+4197347566,65042,PERF: avoid redundant category re-validation in Categorical._simple_new,closed,2026-04-02 22:49:29+00:00,2026-04-03 00:21:37+00:00,3,0,1
+4197262177,65041,BUG: fix numpy ufuncs (e.g. np.isnan) raising TypeError on pyarrow dtypes with distinguish_nan_and_na enabled,closed,2026-04-02 22:22:32+00:00,2026-04-30 08:34:06+00:00,3,27,1
+4197260578,65039,DOC: perf impact of to_numpy() defaulting to object dtype for tz-aware datetime,closed,2026-04-02 22:21:55+00:00,2026-04-16 20:09:25+00:00,2,13,1
+4197260081,65038,BUG: fix FloatingArray.astype(str) crash with distinguish_nan_and_na=True,closed,2026-04-02 22:21:43+00:00,2026-04-21 15:51:06+00:00,6,18,1
+4197190697,65036,CLN: remove using_cow parameter from _iLocIndexer._align_series,closed,2026-04-02 21:59:34+00:00,2026-04-03 00:23:04+00:00,1,0,1
+4197167934,65035,PERF: Optimize BlockManager metadata operations and dtype inference,closed,2026-04-02 21:52:58+00:00,2026-04-21 09:50:09+00:00,2,18,1
+4196952739,65033,CI: Bump Pixi version and relock,closed,2026-04-02 20:58:54+00:00,2026-04-02 21:54:03+00:00,0,0,1
+4196944030,65032,DOC: clarify object-dtype ndarray inference in Index and Series,closed,2026-04-02 20:56:53+00:00,2026-05-13 17:35:46+00:00,2,40,1
+4196241588,65031,PERF: Use DataFrame-level reductions in DataFrame.agg with list of funcs,closed,2026-04-02 18:25:36+00:00,2026-04-10 21:12:39+00:00,2,8,1
+4195876526,65030,PERF: speed up Index._engine construction,closed,2026-04-02 17:10:14+00:00,2026-04-02 21:59:04+00:00,1,0,1
+4195819526,65028,PERF: avoid expensive DataFrame snapshot in loc.__setitem__,closed,2026-04-02 16:57:51+00:00,2026-04-03 18:14:44+00:00,1,1,1
+4195814482,65027,PERF: restore hash table pre-allocation in value_count,closed,2026-04-02 16:56:50+00:00,2026-04-03 20:36:27+00:00,1,1,1
+4195781480,65026,PERF: restore kh_get before kh_put in hashtable operations,closed,2026-04-02 16:49:29+00:00,2026-04-06 16:00:02+00:00,1,3,1
+4195660280,65025,CLN: py2 leftover comments mostly,closed,2026-04-02 16:22:54+00:00,2026-04-02 22:02:03+00:00,1,0,1
+4195605238,65024,BUG: Categorical repr values line now respects display.width,closed,2026-04-02 16:12:49+00:00,2026-04-04 19:05:05+00:00,1,2,1
+4195587857,65023,Backport PR #64993 on branch 3.0.x (CI: Fix numpy nightly failures from generic timedelta64 deprecation),closed,2026-04-02 16:10:09+00:00,2026-04-02 23:23:13+00:00,0,0,1
+4195585778,65022,BUG: Index repr attributes now wrap to respect display.width,closed,2026-04-02 16:09:53+00:00,2026-04-04 19:00:38+00:00,1,2,1
+4195551463,65021,TST: add tests for DataFrame indexing with DateOffset columns,closed,2026-04-02 16:03:39+00:00,2026-04-02 22:00:32+00:00,1,0,1
+4195530031,65019,TST: Add regression test for concat with tz_convert MonthStart index,closed,2026-04-02 15:59:29+00:00,2026-04-03 18:17:28+00:00,1,1,1
+4195522364,65018,PERF: Optimize CSV categorical parsing when categories are known,closed,2026-04-02 15:57:58+00:00,2026-04-09 16:32:11+00:00,2,7,1
+4195456199,65017,"BUG: PeriodIndex.to_timestamp with explicit freq ignores how=""start""",closed,2026-04-02 15:45:30+00:00,2026-04-08 21:24:18+00:00,0,6,1
+4195376589,65016,PERF: fix O(n) linear scan in _bin_search for ObjectEngine.get_loc,closed,2026-04-02 15:29:42+00:00,2026-04-02 22:04:15+00:00,1,0,1
+4195361500,65015,BUG: Series.searchsorted raises TypeError for incompatible value dtypes,closed,2026-04-02 15:27:17+00:00,2026-04-20 20:23:32+00:00,0,18,1
+4195320077,65014,"BUG: date_range with start==end and inclusive=""left""/""right"" returns empty",closed,2026-04-02 15:20:31+00:00,2026-04-03 20:38:05+00:00,1,1,1
+4195313835,65013,"BUG: date_range with inclusive=""left""/""right"" inconsistent when start==end",closed,2026-04-02 15:19:36+00:00,2026-04-02 23:29:09+00:00,0,0,1
+4195307915,65012,BUG: DatetimeIndex constructor raises for equivalent freqs,closed,2026-04-02 15:18:37+00:00,2026-04-06 16:50:38+00:00,1,4,1
+4195306193,65011,BUG: date_range with periods=1 raises for offsets that disallow n=0,closed,2026-04-02 15:18:18+00:00,2026-04-03 00:25:12+00:00,1,0,1
+4195294707,65010,BUG: Fix infer_freq returning wrong anchor month for quarterly frequencies,closed,2026-04-02 15:16:34+00:00,2026-04-20 20:23:55+00:00,0,18,1
+4195292992,65009,BUG: Fix AssertionError in replace with out-of-bounds datetime,closed,2026-04-02 15:16:19+00:00,2026-04-03 16:54:59+00:00,1,1,1
+4195292082,65008,BUG: Fix DatetimeIndex.round raising AmbiguousTimeError near DST transitions,closed,2026-04-02 15:16:10+00:00,2026-04-08 21:23:54+00:00,0,6,1
+4195286664,65007,DOC: Document ambiguous and nonexistent params in date_range,closed,2026-04-02 15:15:26+00:00,2026-04-02 16:12:09+00:00,1,0,1
+4195243435,65006,PERF: avoid data copy in DataFrame.drop for non-contiguous columns,closed,2026-04-02 15:08:45+00:00,2026-04-02 17:22:03+00:00,1,0,1
+4195236419,65005,PERF: avoid redundant isna in NumpyExtensionArray.to_numpy,closed,2026-04-02 15:07:44+00:00,2026-04-02 17:23:18+00:00,1,0,1
+4194705713,65004,DEV: remove unused tooling/debug Docker directory,closed,2026-04-02 13:43:42+00:00,2026-04-09 23:28:36+00:00,4,7,1
 4194478248,65003,"PERF: DataFrame row-wise .loc assignment is much slower with string_storage=""pyarrow"" than ""python""",closed,2026-04-02 13:05:00+00:00,2026-04-09 18:14:22+00:00,2,7,1
+4194334965,65002,DOC: clarify str.cat returns Series when called on Index,closed,2026-04-02 12:41:22+00:00,2026-04-05 18:12:40+00:00,1,3,1
+4193337542,65001,DOC: clarify object-dtype ndarray inference in Index and Series,closed,2026-04-02 09:44:20+00:00,2026-04-02 21:00:14+00:00,0,0,1
 4192917932,65000,"BUG: `na_rep=""""` in `DataFrame.to_csv` not applied consistently",closed,2026-04-02 08:41:22+00:00,2026-04-02 09:30:29+00:00,2,0,1
+4191675435,64998,DOC: clarify Series index alignment behavior in DataFrame.assign,closed,2026-04-02 05:06:02+00:00,2026-05-06 16:50:50+00:00,1,34,1
 4190095228,64994,DOC: Clarify Series index alignment in DataFrame.assign,closed,2026-04-01 21:50:14+00:00,2026-05-06 16:50:51+00:00,1,34,1
+4189559413,64993,CI: Fix numpy nightly failures from generic timedelta64 deprecation,closed,2026-04-01 20:04:11+00:00,2026-04-02 16:09:35+00:00,1,0,1
+4189423615,64992,TST: add test for display.precision with float in object index,closed,2026-04-01 19:37:57+00:00,2026-04-02 16:44:45+00:00,1,0,1
+4189388226,64991,PERF: add nogil and cdivision declarations in _libs.algos,closed,2026-04-01 19:29:59+00:00,2026-04-02 16:17:37+00:00,1,0,1
+4188719151,64989,DOC: Fix observed default value in pivot_table docstring,closed,2026-04-01 17:36:40+00:00,2026-04-01 20:25:28+00:00,1,0,1
+4188308586,64988,BUG: Fix pyarrow-backed string dtype addition with missing values,closed,2026-04-01 16:37:52+00:00,2026-04-16 12:59:00+00:00,8,14,1
+4188101523,64987,CI: Don't gh auth when trying to clean caches,closed,2026-04-01 16:06:59+00:00,2026-04-01 16:44:17+00:00,1,0,1
+4187733990,64986,API/DOC: remove iterability requirement for file-like object + clarify requirements in IO docstrings,closed,2026-04-01 15:14:08+00:00,2026-04-03 09:03:51+00:00,4,1,1
+4187733747,64985,DOC: note optional dependencies for remote URL schemes in read_* docstrings,closed,2026-04-01 15:14:06+00:00,2026-04-01 15:39:49+00:00,1,0,1
+4187733613,64984,"DOC: remove stale ""if level specified"" from reduction docstrings",closed,2026-04-01 15:14:05+00:00,2026-04-01 15:32:46+00:00,1,0,1
+4187733415,64983,DOC: clarify eval/query performance guidance (GH#35367),closed,2026-04-01 15:14:03+00:00,2026-04-01 15:36:33+00:00,1,0,1
+4187729451,64982,DOC: document silent integer overflow in gotchas page,closed,2026-04-01 15:13:31+00:00,2026-04-01 20:14:54+00:00,1,0,1
+4187713594,64981,DOC: clarify NDFrame.get returns default when any list key is missing,closed,2026-04-01 15:11:31+00:00,2026-04-01 15:34:19+00:00,1,0,1
 4186484781,64978,BUG: read_parquet fails with tz aware data,closed,2026-04-01 12:19:42+00:00,2026-04-10 16:56:19+00:00,8,9,1
+4184964075,64976,REGR: restore rank() for ExtensionArrays with custom values for sorting,closed,2026-04-01 07:59:25+00:00,2026-04-21 22:45:37+00:00,6,20,1
+4184747716,64975,DOC: move 3.1 whatsnew to its own section in index.rst,closed,2026-04-01 07:18:53+00:00,2026-04-01 15:31:24+00:00,1,0,1
+4184734371,64974,[backport 3.0.x] DOC: start 3.0.3 whatsnew notes (#64942),closed,2026-04-01 07:16:18+00:00,2026-04-01 14:14:24+00:00,0,0,1
+4183543818,64973,DOC: Clarify default behavior of allow_duplicates in DataFrame.insert,closed,2026-04-01 02:05:09+00:00,2026-04-10 04:18:18+00:00,0,9,1
+4182244845,64972,BUG: fix DataFrame repr exceeding terminal width after horizontal truncation,closed,2026-03-31 20:46:02+00:00,2026-04-02 16:28:01+00:00,1,1,1
+4181998125,64971,DOC: Note that groupby column becomes the index in 10min tutorial,closed,2026-03-31 20:04:31+00:00,2026-03-31 20:37:05+00:00,1,0,1
+4181986933,64970,ENH: Support f-string formatting for Period objects,closed,2026-03-31 20:02:27+00:00,2026-03-31 22:15:55+00:00,1,0,1
 4181546645,64968,BUG: pyarrow-backed string dtype addition with missing value scalar fails,closed,2026-03-31 18:52:08+00:00,2026-04-16 12:59:01+00:00,2,15,1
+4181408968,64967,DOC: remove stale references to removed parse_dates modes in io.rst,closed,2026-03-31 18:28:36+00:00,2026-03-31 20:34:59+00:00,1,0,1
+4181358193,64966,PERF: use cached transition data for ZoneInfo timezones,closed,2026-03-31 18:19:32+00:00,2026-04-03 04:12:32+00:00,0,2,1
+4181319796,64965,DOC: Remove dateutil and scipy intersphinx mappings,closed,2026-03-31 18:12:49+00:00,2026-03-31 19:11:27+00:00,1,0,1
+4180734295,64964,TST: add test for comma-separated fractional seconds in Timestamp,closed,2026-03-31 16:48:39+00:00,2026-03-31 17:44:00+00:00,1,0,1
+4180688639,64963,TST: add regression test for datetime64 column index parquet roundtrip,closed,2026-03-31 16:41:25+00:00,2026-03-31 20:36:01+00:00,1,0,1
+4180671720,64962,Add example for handling missing labels using fillna,closed,2026-03-31 16:38:36+00:00,2026-05-06 21:05:36+00:00,1,36,1
+4180635689,64961,"TST: add test for shift(freq=""infer"") with float-converted DatetimeIndex",closed,2026-03-31 16:32:50+00:00,2026-03-31 17:42:10+00:00,1,0,1
+4180628026,64960,DOC: clarify pickle compatibility is only within major versions,closed,2026-03-31 16:31:37+00:00,2026-04-29 21:36:46+00:00,4,29,1
+4180330751,64958,ENH: DataFrame(list_of_arrays) preserves uniform dtype,closed,2026-03-31 15:49:23+00:00,2026-03-31 22:18:20+00:00,1,0,1
+4180322537,64957,BUG: Index.fillna with tuple fill value,closed,2026-03-31 15:48:18+00:00,2026-03-31 22:20:03+00:00,1,0,1
+4180310206,64956,BUG: pd.array raises IntCastingNaNError for float-with-NaN to integer dtype,closed,2026-03-31 15:46:35+00:00,2026-04-01 16:49:24+00:00,2,1,1
+4180304777,64955,"BUG: SparseArray.astype(""Sparse[int64]"") silently replaced NaT fill_value with 0",closed,2026-03-31 15:45:47+00:00,2026-03-31 22:27:15+00:00,1,0,1
+4180270754,64953,BUG: DatetimeIndex._is_comparable_dtype raises AttributeError on Arrow date types,closed,2026-03-31 15:40:40+00:00,2026-04-03 18:15:55+00:00,1,3,1
+4180269470,64952,BUG: NumpyExtensionArray._validate_setitem_value fails to raise for incompatible values,closed,2026-03-31 15:40:30+00:00,2026-04-02 16:41:00+00:00,2,2,1
+4180265487,64951,BUG: fix CategoricalIndex.union/intersection with mismatched category order,closed,2026-03-31 15:39:52+00:00,2026-04-02 16:40:27+00:00,1,2,1
+4180231147,64950,TST: add tests for assert_frame_equal/assert_series_equal near int64 bounds,closed,2026-03-31 15:34:47+00:00,2026-03-31 17:37:24+00:00,1,0,1
+4180220083,64949,TST: add tests for distinguish_nan_and_na fixing GH#61856 and GH#61617,closed,2026-03-31 15:33:25+00:00,2026-03-31 17:54:23+00:00,0,0,1
+4180214432,64948,TST: add test for mixed-freq Period setops in object-dtype Index,closed,2026-03-31 15:32:36+00:00,2026-03-31 22:29:14+00:00,1,0,1
+4180209782,64947,TST: add regression test for Index.get_indexer_for with mixed tuples,closed,2026-03-31 15:31:55+00:00,2026-03-31 22:30:16+00:00,1,0,1
+4180206719,64946,REGR: fix plotting DataFrame with descending DatetimeIndex,closed,2026-03-31 15:31:28+00:00,2026-03-31 17:26:23+00:00,1,0,1
+4179459225,64945,DOC: note that bool and int are not distinguished in object-dtype factorize/unique,closed,2026-03-31 13:57:38+00:00,2026-04-16 19:38:57+00:00,1,16,1
+4179333369,64944,CI: bump setup-micromamba to 3.0.0,closed,2026-03-31 13:43:11+00:00,2026-03-31 16:23:06+00:00,1,0,1
+4178546049,64943,REF: Update dedup_names TODO comment in python parser (GH#50371),closed,2026-03-31 11:56:38+00:00,2026-04-01 15:08:52+00:00,7,1,1
+4177707523,64942,DOC: start 3.0.3 whatsnew notes,closed,2026-03-31 09:49:14+00:00,2026-03-31 17:22:14+00:00,3,0,1
 4177252113,64941,"BUG: `str.replace("""", """")` sometimes hangs up the console",closed,2026-03-31 08:45:09+00:00,2026-04-28 15:12:09+00:00,8,28,1
+4174331912,64940,BUG: DataFrame.rank() now preserves ExtensionArray dtypes (GH#52829),closed,2026-03-30 22:00:11+00:00,2026-04-29 17:40:22+00:00,2,29,1
+4174310429,64939,.,closed,2026-03-30 21:55:16+00:00,2026-03-30 21:55:29+00:00,0,0,1
+4174137428,64936,"BUG: hexbin plot now respects rcParams[""image.cmap""]",closed,2026-03-30 21:17:23+00:00,2026-04-01 15:49:43+00:00,1,1,1
+4173886873,64935,TST: remove dead-code xfails in test_append_common,closed,2026-03-30 20:30:41+00:00,2026-03-31 00:24:29+00:00,1,0,1
+4173444216,64934,RLS: 3.0.2 (#64930),closed,2026-03-30 19:20:40+00:00,2026-03-30 19:25:38+00:00,0,0,1
+4172802300,64932,Backport PR #64931 on branch 3.0.x (DOC/BLD: temporary disable upload of docs to get artifact),closed,2026-03-30 17:46:15+00:00,2026-03-30 19:09:30+00:00,0,0,1
+4172406304,64931,DOC/BLD: temporary disable upload of docs to get artifact,closed,2026-03-30 16:56:47+00:00,2026-03-30 17:46:08+00:00,1,0,1
+4172378261,64930,RLS: 3.0.2,closed,2026-03-30 16:53:30+00:00,2026-03-30 19:08:21+00:00,2,0,1
+4172088092,64929,TST: make test assertions stricter,closed,2026-03-30 16:17:43+00:00,2026-03-30 19:27:49+00:00,1,0,1
+4171458079,64928,Backport PR #64664 on branch 3.0.x (BUG: DataFrame.sum() crashes on empty DataFrame with string + numeric columns),closed,2026-03-30 14:55:20+00:00,2026-03-30 17:22:39+00:00,0,0,1
+4170849335,64927,[backport 3.0.x] PERF: fix slow python loop in validation for ArrowStringArray setitem value (_maybe_convert_setitem_value) (#64530),closed,2026-03-30 13:42:23+00:00,2026-03-30 14:42:56+00:00,0,0,1
+4170821413,64926,Backport PR #64133 on branch 3.0.x (BUG: str.find returns byte offset instead of character offset with str dtype),closed,2026-03-30 13:38:17+00:00,2026-03-30 14:39:32+00:00,0,0,1
+4170251010,64925,Pixi: use build dir based on env name for build-pandas task,closed,2026-03-30 12:14:59+00:00,2026-04-09 15:18:02+00:00,5,10,1
+4169381676,64924,DOC: move some whatsnew items from 3.1.0 to 3.0.2,closed,2026-03-30 10:03:51+00:00,2026-03-30 19:24:39+00:00,0,0,1
+4169336170,64923,[backport 3.0.x] BUG: fix convert_dtypes dropping values from sliced mixed-dtype DataFrames (#64712),closed,2026-03-30 09:57:01+00:00,2026-03-30 11:22:48+00:00,0,0,1
+4169283824,64922,[backport 3.0.x] BUG: Fix HDFStore.put with StringDtype columns and compression (#64180) (#64569),closed,2026-03-30 09:49:27+00:00,2026-03-30 11:12:10+00:00,0,0,1
+4169103806,64921,[backport 3.0.x] BUG: Suppress unnecessary RuntimeWarning in to_datetime with missing componentsFix runtime warning (#64292),closed,2026-03-30 09:25:28+00:00,2026-03-30 11:11:21+00:00,0,0,1
+4168652051,64920,Bump github/codeql-action from 4.34.1 to 4.35.1,closed,2026-03-30 08:25:31+00:00,2026-03-30 15:14:24+00:00,0,0,1
+4168649287,64919,Bump codecov/codecov-action from 5.5.3 to 6.0.0,closed,2026-03-30 08:25:10+00:00,2026-03-30 13:45:50+00:00,0,0,1
+4168648678,64918,Bump mamba-org/setup-micromamba from 2.0.7 to 3.0.0,closed,2026-03-30 08:25:05+00:00,2026-03-30 13:44:11+00:00,2,0,1
+4167214900,64917,DEPR: Deprecate passing non-bool value for numeric_only in reductions (GH#53098),closed,2026-03-30 04:29:43+00:00,2026-04-10 17:38:41+00:00,2,11,1
+4165722796,64916,TST: add tests for mixed-resolution datetime64 in object Index,closed,2026-03-29 20:27:17+00:00,2026-04-01 00:24:10+00:00,1,2,1
+4165312390,64914,TST: Add regression test for GH#29576,closed,2026-03-29 17:54:23+00:00,2026-04-29 17:39:57+00:00,1,30,1
+4161704801,64913,"DOC: ""RadViz allow project"" -> ""RadViz allows you to project""",closed,2026-03-28 21:24:39+00:00,2026-03-29 16:11:15+00:00,1,0,1
+4161174091,64912,REV: revert #64689 MultiIndex.loc datetime64-to-date conversion,closed,2026-03-28 18:12:58+00:00,2026-03-29 17:56:40+00:00,1,0,1
+4161150760,64909,CI: Replace deprecated actions/gh-actions-cache with gh cache delete command,closed,2026-03-28 18:07:56+00:00,2026-03-31 17:23:46+00:00,1,2,1
+4161080884,64908,BUG: warn when DataFrame.update finds no matches due to index dtype mismatch,closed,2026-03-28 17:51:19+00:00,2026-05-12 18:04:56+00:00,2,45,1
+4160707478,64907,ENH: Raise ValueError when numeric_only=None in reduction operations …,closed,2026-03-28 16:28:44+00:00,2026-04-09 22:01:23+00:00,1,12,1
+4160703307,64906,ENH: Raise ValueError when numeric_only=None in reduction operations …,closed,2026-03-28 16:27:53+00:00,2026-03-28 16:28:14+00:00,0,0,1
+4156983727,64904,BUG: Fix read_sas IndexError for SAS7BDAT files with amd pages,closed,2026-03-28 02:17:00+00:00,2026-04-23 14:41:03+00:00,0,26,1
+4156898802,64903,TST: remove stale strict=False xfails,closed,2026-03-28 01:45:15+00:00,2026-03-28 18:27:56+00:00,1,0,1
+4156347245,64902,TST: Skip (AM/PM) parsing tests on non en_US locales,closed,2026-03-27 22:52:26+00:00,2026-04-16 17:59:20+00:00,1,19,1
+4155077026,64901,TST: remove stale strict=False xfails,closed,2026-03-27 18:38:03+00:00,2026-03-28 00:01:47+00:00,1,0,1
+4154994944,64900,DOC: Clarify that weekly anchor day is the end of the period,closed,2026-03-27 18:24:08+00:00,2026-03-28 00:04:03+00:00,1,0,1
+4154982893,64898,DOC: Clarify BusinessDay offset parameter docstring,closed,2026-03-27 18:22:08+00:00,2026-03-28 00:02:56+00:00,1,0,1
+4154977925,64897,"DOC: Clarify interaction between format, unit, and origin in to_datetime",closed,2026-03-27 18:21:22+00:00,2026-03-28 00:06:23+00:00,1,0,1
+4154956394,64896,BUG: Fix KeyError in DataFrame.to_stata with convert_dates and invalid column names,closed,2026-03-27 18:18:00+00:00,2026-03-29 18:01:25+00:00,3,1,1
+4154542703,64895,CI: Add pixi.lock update workflow,closed,2026-03-27 17:12:34+00:00,2026-03-27 19:59:42+00:00,0,0,1
+4153934906,64893,ENH: add limit_behavior option to interpolate to skip large NaN gaps,closed,2026-03-27 16:00:39+00:00,2026-05-16 03:21:24+00:00,4,49,1
+4153893700,64892,Backport PR #64886: BUG: Compute Variance of Complex Numbers Correctly,closed,2026-03-27 15:54:51+00:00,2026-03-27 18:19:23+00:00,0,0,1
+4153764634,64891,BLD: reduce meson lower bound in build-system requires as well,closed,2026-03-27 15:36:21+00:00,2026-03-27 17:16:09+00:00,1,0,1
+4153482408,64890,My first contribution my first commit,closed,2026-03-27 15:00:23+00:00,2026-03-27 15:07:20+00:00,1,0,1
 4150627044,64888,BUILD: Update Pandas on Skills Network,closed,2026-03-27 08:33:54+00:00,2026-03-27 15:46:50+00:00,1,0,1
+4147658671,64887,CI: Use pixi.lock during Pixi environment creation,closed,2026-03-26 22:11:30+00:00,2026-03-27 16:12:11+00:00,3,0,1
+4147651559,64886,BUG: Compute Variance of Complex Numbers Correctly,closed,2026-03-26 22:09:48+00:00,2026-03-26 22:58:27+00:00,7,0,1
 4146127758,64883,PERF: sort_index on RangeIndex with level= copies data blocks unnecessarily,closed,2026-03-26 17:52:58+00:00,2026-04-21 17:14:58+00:00,2,25,1
+4145682414,64882,Backport PR #64386 on branch 3.0.x (BUG: fix sort_index AssertionError with RangeIndex and level parameter),closed,2026-03-26 16:51:40+00:00,2026-03-26 18:54:33+00:00,0,0,1
+4145337459,64881,BUG: fix HDFStore.select scope resolution with list-of-conditions on Python 3.12+,closed,2026-03-26 16:08:25+00:00,2026-03-30 15:21:46+00:00,1,3,1
+4145251497,64880,BUG: regression in bdate_range for end on weekend,closed,2026-03-26 15:57:05+00:00,2026-04-03 23:49:07+00:00,2,8,1
+4142449600,64876,Clarify boolean and integer value handling in algorithms,closed,2026-03-26 10:09:56+00:00,2026-05-12 18:05:53+00:00,2,47,1
+4139905938,64874,CI: re-enable werror on Windows and MacOS Unit Tests,closed,2026-03-26 02:15:15+00:00,2026-03-26 16:28:37+00:00,1,0,1
+4139879118,64873,Contrib documentation fixes 032025,closed,2026-03-26 02:09:23+00:00,2026-03-27 15:39:21+00:00,2,1,1
+4139711976,64871,DEPR: deprecate dates-with-datetime64 in _maybe_downcast_for_indexing,closed,2026-03-26 01:30:02+00:00,2026-04-10 16:17:05+00:00,2,15,1
+4139557040,64869,TST: narrow xfail in test_categorical_dtype_single for pyarrow,closed,2026-03-26 00:54:24+00:00,2026-03-26 18:00:11+00:00,1,0,1
+4139554560,64868,DEPR: Series.combine with non-Series other,closed,2026-03-26 00:53:46+00:00,2026-03-26 22:13:55+00:00,0,0,1
 4139502144,64866,DOC: bool vs int in object-dtype methods,closed,2026-03-26 00:39:12+00:00,2026-04-16 19:38:15+00:00,3,21,1
+4139465773,64863,PERF: optimize DataFrame.__repr__ formatting,closed,2026-03-26 00:27:11+00:00,2026-05-03 13:24:10+00:00,4,38,1
+4139461951,64862,TST: remove stale xfails in groupby value_counts tests,closed,2026-03-26 00:26:08+00:00,2026-03-26 18:02:26+00:00,1,0,1
+4139450442,64861,CI: Reduce meson lower boundin pixi to 1.2.3,closed,2026-03-26 00:22:50+00:00,2026-03-26 17:44:36+00:00,2,0,1
+4139447484,64860,TST: use approximate comparison for pairwise rolling corr on 32-bit,closed,2026-03-26 00:21:43+00:00,2026-03-26 18:03:28+00:00,1,0,1
+4139447378,64859,TST: remove np.sum xfails from rolling/expanding consistency tests,closed,2026-03-26 00:21:40+00:00,2026-03-27 15:53:40+00:00,1,1,1
+4139444181,64858,TST: remove/fix stale xfails,closed,2026-03-26 00:20:37+00:00,2026-03-27 15:58:36+00:00,1,1,1
+4139437031,64857,"DEPR: Deprecate weekday property on DatetimeIndex, PeriodIndex, Period",closed,2026-03-26 00:18:22+00:00,2026-03-29 18:06:09+00:00,1,3,1
+4139419674,64856,BUG: fix RecursionError in fillna with dict and duplicate MultiIndex columns,closed,2026-03-26 00:13:31+00:00,2026-03-27 16:00:18+00:00,1,1,1
+4139406952,64855,BUG: fix quantile precision loss for ns-resolution datetimelike data,closed,2026-03-26 00:10:12+00:00,2026-04-06 17:17:35+00:00,0,11,1
+4139402720,64854,TST: add tests for NaN/NA issues resolved by distinguish_nan_and_na,closed,2026-03-26 00:09:13+00:00,2026-03-29 18:07:59+00:00,1,3,1
+4139397894,64853,BUG: fix BusinessHour subtraction landing on opening time,closed,2026-03-26 00:08:03+00:00,2026-04-02 16:49:10+00:00,1,7,1
+4139375825,64852,BUG: fix DataFrame.__getitem__ with slice in tuple on MultiIndex columns,closed,2026-03-26 00:01:15+00:00,2026-04-06 16:52:40+00:00,1,11,1
+4139369624,64850,"DOC: note that replace() uses equality, not identity",closed,2026-03-25 23:59:15+00:00,2026-03-26 17:43:03+00:00,1,0,1
+4139276000,64849,BUG: permit building from source with mingw,closed,2026-03-25 23:35:31+00:00,2026-04-21 17:32:20+00:00,1,26,1
+4139250716,64848,REF: Use moments accumulator from `libalgos` to compute variance,closed,2026-03-25 23:29:36+00:00,2026-05-07 00:59:58+00:00,4,42,1
+4138574810,64846,"Revert ""BUG: distinguish bool from int in object-dtype hash table""",closed,2026-03-25 21:13:07+00:00,2026-03-26 00:37:40+00:00,2,0,1
+4138440118,64845,DOC: Add BigQuery DataFrames (bigframes) to ecosystem docs,closed,2026-03-25 20:50:23+00:00,2026-03-25 22:12:06+00:00,2,0,1
 4137473850,64844,BUG: numpy array type is not being respected in `Index` constructor,closed,2026-03-25 18:13:15+00:00,2026-05-13 17:35:47+00:00,1,48,1
+4137351697,64843,Fix #64825 by using .get_indexer_for() instead of .get_indexer(),closed,2026-03-25 17:56:43+00:00,2026-03-26 07:15:42+00:00,1,0,1
+4137252172,64842,BUG: fix to_datetime losing sub-unit precision of origin,closed,2026-03-25 17:40:55+00:00,2026-03-27 16:28:42+00:00,0,1,1
 4136583133,64841,"ENH: add method=""time"" to .reindex() to interpolate timeseries to different DatetimeIndex",closed,2026-03-25 16:03:22+00:00,2026-03-25 22:36:49+00:00,4,0,1
+4136519590,64840,TST: remove strict=False from xfail markers,closed,2026-03-25 15:54:33+00:00,2026-03-26 18:07:20+00:00,1,1,1
+4134843635,64838,ERR: validate numeric_only is boolean in reductions (#53098),closed,2026-03-25 11:52:47+00:00,2026-04-10 17:38:52+00:00,6,16,1
+4133787862,64837,Backport PR #64235 on branch 3.0.x (BUG: normalize_json no longer supports top-level missing entries),closed,2026-03-25 09:04:11+00:00,2026-03-25 16:12:34+00:00,0,0,1
+4133026064,64836,BUG: Timedelta.round() raises ZeroDivisionError when internal unit is 's' and target frequency is sub-second,closed,2026-03-25 06:44:53+00:00,2026-04-10 17:36:03+00:00,5,16,1
 4131393291,64834,BUG: bdate_range returns one less days when end and periods are given,closed,2026-03-24 23:44:58+00:00,2026-04-24 08:37:16+00:00,4,30,1
+4131264059,64833,Backport PR #64829 on branch 3.0.x (TST: xfail test_no_track_times with HDF5 >= 2),closed,2026-03-24 23:14:39+00:00,2026-03-25 00:29:14+00:00,0,0,1
+4130885083,64832,CLN: inline and remove maybe_convert_platform,closed,2026-03-24 21:54:41+00:00,2026-03-25 00:30:03+00:00,1,0,1
+4130836067,64831,REF: add ExtensionArray._groupby_quantile method,closed,2026-03-24 21:41:56+00:00,2026-04-29 21:08:29+00:00,2,35,1
+4130822502,64830,BUG: fix iloc setitem with nullable EA dtype Series/Index (#47776),closed,2026-03-24 21:38:24+00:00,2026-03-25 16:17:49+00:00,1,0,1
+4130613905,64829,TST: xfail test_no_track_times with HDF5 >= 2,closed,2026-03-24 20:58:06+00:00,2026-03-24 22:58:45+00:00,2,0,1
 4130031159,64828,BUG: Timedelta.round() raises ZeroDivisionError when internal unit is 's' and target frequency is sub-second,closed,2026-03-24 19:00:20+00:00,2026-04-10 17:36:04+00:00,2,16,1
+4129190378,64827,BUG: fix min_rows not respected when max_rows=None in to_string,closed,2026-03-24 16:32:30+00:00,2026-03-24 16:50:14+00:00,1,0,1
+4128386089,64826,BUG: Fix ValueError when plotting DataFrame with descending DatetimeI…,closed,2026-03-24 14:33:11+00:00,2026-04-01 20:12:30+00:00,4,8,1
+4125951100,64822,BUG: Fix __getitem__ KeyError for np.True_/np.False_ column keys,closed,2026-03-24 07:54:29+00:00,2026-03-26 00:37:43+00:00,0,1,1
+4125942458,64821,"BUG: C engine read_csv silently casts ""1 ,"" to int when thousands="",""",closed,2026-03-24 07:52:30+00:00,2026-03-30 12:52:34+00:00,1,6,1
+4125938772,64820,BUG: Fix DataFrame.sum() crash on empty DataFrame with mixed string+numeric columns,closed,2026-03-24 07:51:42+00:00,2026-03-30 12:21:42+00:00,1,6,1
 4125329990,64819,BUG: DataFrames with backwards time index cannot be plotted,closed,2026-03-24 05:16:52+00:00,2026-03-31 17:26:24+00:00,3,7,1
+4124691021,64818,BUG: Index.insert silently casts bool to numeric for masked dtypes,closed,2026-03-24 01:44:18+00:00,2026-03-24 16:22:05+00:00,1,0,1
+4124685134,64817,BUG: fix KeyError when looking up tuple in object Index with duplicates,closed,2026-03-24 01:42:10+00:00,2026-03-25 16:41:33+00:00,1,1,1
+4124648216,64816,BUG: fix DataFrame.where/mask with Series cond and axis=1,closed,2026-03-24 01:27:57+00:00,2026-03-24 16:36:46+00:00,1,0,1
+4124623093,64815,TST: test improved error message for non-monotonic DatetimeIndex slicing,closed,2026-03-24 01:18:34+00:00,2026-03-24 16:30:42+00:00,1,0,1
+4124615222,64814,BUG: honor drop_level=False in DataFrame.xs for fully specified MultiIndex keys,closed,2026-03-24 01:15:30+00:00,2026-03-25 00:30:30+00:00,1,0,1
+4124591525,64813,TST: add test for datetime.timedelta arithmetic resolution (GH#59656),closed,2026-03-24 01:06:52+00:00,2026-03-24 16:19:14+00:00,0,0,1
+4124570831,64812,ERR: clarify error message for multi-char separators with pyarrow engine,closed,2026-03-24 00:58:54+00:00,2026-03-24 16:29:43+00:00,1,0,1
+4123930348,64811,PERF: fast path for partial-string indexing on monotonic decreasing DTI,closed,2026-03-23 21:52:58+00:00,2026-03-24 16:56:51+00:00,1,0,1
+4123897873,64810,DEPR: warn when NA matches NA in merge,closed,2026-03-23 21:45:17+00:00,2026-04-08 20:52:42+00:00,1,15,1
+4123892656,64809,BUG: fix dt64[non_nano] + offsets with sub-unit offset parameter,closed,2026-03-23 21:44:05+00:00,2026-03-25 17:53:29+00:00,1,1,1
+4123890973,64808,"DEPR: deprecate SparseArray sparse_index parameter, add from_indices",closed,2026-03-23 21:43:43+00:00,2026-04-08 20:52:46+00:00,1,15,1
+4123875627,64807,PERF: Vectorize MultiIndex.get_locs for list-like keys,closed,2026-03-23 21:39:20+00:00,2026-03-25 17:54:47+00:00,1,1,1
+4123864633,64806,BUG: fix DatetimeIndex + DateOffset near DST transitions,closed,2026-03-23 21:36:16+00:00,2026-03-25 16:32:10+00:00,1,1,1
+4123862569,64805,BUG: fix DatetimeIndex + sub-daily DateOffset inconsistency across DST,closed,2026-03-23 21:35:40+00:00,2026-03-24 18:08:56+00:00,0,0,1
+4123853034,64804,BUG: fix is_subperiod/is_superperiod identity for M/Q/Y frequencies,closed,2026-03-23 21:32:57+00:00,2026-04-02 17:18:17+00:00,1,9,1
+4123846259,64802,ENH: Support axis parameter in masked array reductions for 2D arrays,closed,2026-03-23 21:30:57+00:00,2026-04-14 17:33:13+00:00,1,21,1
+4123836623,64801,ENH: use _cast_pointwise_result in ExtensionArray.map,closed,2026-03-23 21:28:14+00:00,2026-04-16 16:17:28+00:00,1,23,1
+4123788383,64800,BUG: fix float64 precision loss in Series.interpolate for datetime/timedelta indexes,closed,2026-03-23 21:16:39+00:00,2026-04-06 17:18:10+00:00,0,13,1
+4123783225,64799,PERF: use np.searchsorted for nearest interpolation instead of scipy interp1d,closed,2026-03-23 21:15:43+00:00,2026-04-20 20:22:25+00:00,0,27,1
+4123714058,64798,BUG: reject unhashable elements in Index constructor,closed,2026-03-23 21:01:38+00:00,2026-04-25 13:48:21+00:00,5,32,1
+4123710808,64797,"BUG: exclude RangeIndex from _can_use_libjoin, fix _union sorting",closed,2026-03-23 21:01:03+00:00,2026-04-03 22:14:54+00:00,1,11,1
+4123708614,64796,BUG: Index.get_indexer with method and NaT/NaN target returns -1,closed,2026-03-23 21:00:36+00:00,2026-04-02 16:56:35+00:00,1,9,1
+4123706993,64795,"BUG: fix extra trailing bin in resample(""D"", closed=""right"")",closed,2026-03-23 21:00:18+00:00,2026-04-04 02:12:55+00:00,1,11,1
+4123703389,64794,PERF: speed up lexsort_indexer for numeric dtypes,closed,2026-03-23 20:59:39+00:00,2026-04-02 17:09:50+00:00,1,9,1
+4123699992,64792,"BUG: .loc with (scalar, list) on MultiIndex not dropping scalar level",closed,2026-03-23 20:59:02+00:00,2026-04-04 18:40:28+00:00,1,11,1
+4123698211,64791,BUG: Fix float16 overflow in nanmean/nansum by upcasting to float64,closed,2026-03-23 20:58:43+00:00,2026-03-24 16:45:32+00:00,1,0,1
+4123691185,64790,BUG: date_range excludes last offset boundary when end time < start time,closed,2026-03-23 20:57:31+00:00,2026-03-29 18:12:10+00:00,1,5,1
+4123680061,64789,BUG: groupby with Grouper(freq=...) raises when all keys are NaT,closed,2026-03-23 20:55:35+00:00,2026-04-01 18:27:59+00:00,1,8,1
+4123658232,64788,BUG: fix date_range inclusive filtering with periods,closed,2026-03-23 20:52:03+00:00,2026-03-25 19:59:00+00:00,1,1,1
+4123640007,64787,"PERF: reduce overhead in __finalize__, to_numpy, __getitem__, and dtypes",closed,2026-03-23 20:49:02+00:00,2026-03-24 16:48:54+00:00,1,0,1
+4123637760,64786,PERF: use searchsorted in IntervalIndex.get_indexer for monotonic indexes,closed,2026-03-23 20:48:41+00:00,2026-04-04 16:52:32+00:00,2,11,1
+4123635315,64785,PERF: avoid boxing in Term.type for PeriodArray/IntervalArray,closed,2026-03-23 20:48:18+00:00,2026-03-24 16:46:59+00:00,1,0,1
+4121418853,64784,DOC: Add MSVC v143 fallback for cl.exe not found error,closed,2026-03-23 14:41:20+00:00,2026-03-23 16:22:14+00:00,1,0,1
+4119117820,64782,Bump github/codeql-action from 4.32.6 to 4.34.1,closed,2026-03-23 08:23:35+00:00,2026-03-23 16:58:19+00:00,0,0,1
+4119115732,64781,Bump codecov/codecov-action from 5.5.2 to 5.5.3,closed,2026-03-23 08:23:14+00:00,2026-03-23 16:58:01+00:00,0,0,1
+4117261997,64777,BUG: fix MultiIndex .loc with np.datetime64 on datetime.date level (#55969),closed,2026-03-22 22:23:24+00:00,2026-03-23 01:52:50+00:00,1,0,1
+4117004492,64776,CLN: Simplify wheel GHA,closed,2026-03-22 20:15:50+00:00,2026-03-29 18:18:19+00:00,1,6,1
+4116928950,64775,CI: Simplify cibuildwheel testing configs in pyproject.toml,closed,2026-03-22 19:42:55+00:00,2026-03-26 19:01:55+00:00,1,3,1
+4116923249,64774,CLN: Add more well known labels to project.urls,closed,2026-03-22 19:40:43+00:00,2026-03-23 22:11:40+00:00,1,1,1
+4116600270,64773,BUG: Fix numpy.bool_ hashing regression in object-dtype hash table,closed,2026-03-22 17:29:57+00:00,2026-03-26 00:37:42+00:00,5,3,1
+4115734097,64772,Fix doubled words and grammar errors in comments and docs,closed,2026-03-22 11:23:49+00:00,2026-03-22 14:20:21+00:00,1,0,1
+4114477670,64771,PERF: move string decoding from Python into Cython in read_sas,closed,2026-03-22 02:50:36+00:00,2026-04-02 21:43:26+00:00,0,11,1
+4114474504,64770,PERF: reuse decompression buffer in SAS7BDAT reader,closed,2026-03-22 02:48:24+00:00,2026-03-23 16:56:16+00:00,1,1,1
+4114473866,64769,PERF: read SAS page headers in Cython instead of Python,closed,2026-03-22 02:48:00+00:00,2026-04-03 21:55:34+00:00,1,12,1
+4114460763,64768,PERF: pre-compute date/datetime column classification in SAS7BDAT reader,closed,2026-03-22 02:38:05+00:00,2026-04-02 17:17:26+00:00,1,11,1
+4114454052,64767,BUG: MultiIndex.sortlevel raises TypeError for incomparable types,closed,2026-03-22 02:33:35+00:00,2026-03-23 17:12:19+00:00,1,1,1
+4114440066,64766,PERF: avoid TextIOWrapper wrapping for binary file-like objects in read_csv,closed,2026-03-22 02:24:54+00:00,2026-03-22 23:00:34+00:00,1,0,1
+4114429774,64765,PERF: speed up to_csv for sparse DataFrames by optimizing SparseArray.isna,closed,2026-03-22 02:19:49+00:00,2026-03-22 19:10:25+00:00,1,0,1
+4114410933,64764,PERF: dispatch is_monotonic_increasing/decreasing to ExtensionArray,closed,2026-03-22 02:06:59+00:00,2026-03-23 16:57:30+00:00,1,1,1
+4114380142,64763,DEPR: Rename startingMonth to starting_month on offset classes,closed,2026-03-22 01:42:09+00:00,2026-04-08 20:52:50+00:00,0,17,1
+4114377492,64762,PERF: use PyArrow native cast for int/bool to string conversion,closed,2026-03-22 01:39:50+00:00,2026-03-22 19:24:51+00:00,1,0,1
+4114370239,64761,PERF: use pyarrow dictionary_encode for hashing arrow string/binary types,closed,2026-03-22 01:34:04+00:00,2026-03-24 16:51:11+00:00,1,2,1
+4114362153,64760,PERF: Use openpyxl write_only mode in DataFrame.to_excel,closed,2026-03-22 01:27:35+00:00,2026-04-25 14:26:22+00:00,1,34,1
+4114354734,64759,DEPR: dropna in pivot_table and crosstab,closed,2026-03-22 01:22:04+00:00,2026-04-08 19:49:27+00:00,1,17,1
+4114351890,64758,PERF: use Cython for SparseArray groupby operations,closed,2026-03-22 01:19:36+00:00,2026-03-22 23:06:24+00:00,1,0,1
+4114319667,64757,Update docstring for methods where inplace keyword is deprecated,closed,2026-03-22 00:54:18+00:00,2026-04-04 00:12:58+00:00,4,12,1
+4114315988,64756,PERF: short-circuit fragmentation check in BlockManager.insert,closed,2026-03-22 00:51:14+00:00,2026-03-22 20:38:33+00:00,1,0,1
+4114312400,64755,BUG: raise on uint64 overflow in to_datetime and to_timedelta,closed,2026-03-22 00:48:14+00:00,2026-03-22 23:08:42+00:00,1,0,1
+4114289693,64754,BUG: Cast np.str_ to str before Cython typed-str calls,closed,2026-03-22 00:30:43+00:00,2026-03-22 23:10:48+00:00,1,0,1
+4114243747,64753,DEPR: Deprecate .at setitem with expansion,closed,2026-03-22 00:00:38+00:00,2026-03-27 15:50:56+00:00,1,5,1
+4114130123,64752,BUG: Fix _replace_regex mutating StringArray in-place for non-inplace replace,closed,2026-03-21 23:07:03+00:00,2026-04-01 20:16:56+00:00,3,10,1
 4112875412,64750,DOC: `[source]` links are incorrect,closed,2026-03-21 15:43:10+00:00,2026-03-31 10:03:13+00:00,6,9,1
 4112753929,64749,BUG: can no longer use `__getitem__` on `np.True_` column with `True`,closed,2026-03-21 14:49:46+00:00,2026-03-26 00:37:42+00:00,1,4,1
+4112662501,64748,REF: use fast_float to read custom decimal separator,closed,2026-03-21 14:11:23+00:00,2026-03-23 17:13:53+00:00,4,2,1
 4112027542,64747,QST: كيف احصل على بيانات الاسهم من ياهو فايننس على اكسل,closed,2026-03-21 10:31:04+00:00,2026-03-21 21:12:16+00:00,2,0,1
+4111475450,64746,CLN: Make BaseOffset.base property private,closed,2026-03-21 05:22:58+00:00,2026-04-03 16:18:39+00:00,9,13,1
+4111139376,64745,TST: add regression tests for Needs Tests issues,closed,2026-03-21 03:01:17+00:00,2026-03-21 16:05:43+00:00,1,0,1
 4110726935,64744,Pandas dataframe does not initialize,closed,2026-03-21 00:21:45+00:00,2026-03-21 15:53:53+00:00,1,0,1
+4110679736,64743,TST: add regression test for loc setitem with DatetimeIndex and str column name,closed,2026-03-21 00:06:38+00:00,2026-03-21 16:02:17+00:00,1,0,1
+4110431700,64742,DOC: freeze v0.x whatsnew notes,closed,2026-03-20 22:36:17+00:00,2026-05-07 21:32:23+00:00,5,47,1
+4109942501,64741,DOC: Document Series reindexing behavior on DataFrame column assignment,closed,2026-03-20 20:19:27+00:00,2026-04-04 21:15:51+00:00,3,15,1
+4109728516,64740,✨ Quality: Add contribution guidelines for new contributors,closed,2026-03-20 19:27:13+00:00,2026-03-20 19:35:23+00:00,0,0,1
+4109404976,64739,CLN: Make _CustomBusinessMonth.cbday_roll and month_roll private,closed,2026-03-20 18:22:38+00:00,2026-03-20 20:13:51+00:00,1,0,1
 4108176039,64738,ENH: Add coerce errors functionality to pandas.Series.apply,closed,2026-03-20 14:21:34+00:00,2026-03-20 15:58:12+00:00,3,0,1
 4107413883,64737,BUG: case_when() does return default string type,closed,2026-03-20 11:44:33+00:00,2026-03-20 12:30:57+00:00,1,0,1
+4106569884,64736,DOC: Fix numpydoc validation warnings for DataFrame.plot.__call__,closed,2026-03-20 08:25:33+00:00,2026-03-20 17:19:34+00:00,2,0,1
+4106068476,64735,ENH: pass na_rep to format_array in Index._format_with_header for con…,closed,2026-03-20 06:22:34+00:00,2026-03-24 11:56:51+00:00,3,4,1
+4105721826,64734,CLN: make _CustomBusinessMonth.cbday_roll private,closed,2026-03-20 04:46:50+00:00,2026-03-20 15:59:25+00:00,1,0,1
+4104658968,64732,"DEPR: Make dtype=""category"" warn when applied to ordered categoricals",closed,2026-03-19 22:53:41+00:00,2026-03-25 19:28:15+00:00,6,5,1
+4104634768,64731,DEPR: deprecate pd.lreshape,closed,2026-03-19 22:48:05+00:00,2026-04-08 20:52:57+00:00,0,19,1
 4104612867,64730,BLD|CI: Failing to Build Wheels on macosx_x86_64,closed,2026-03-19 22:43:08+00:00,2026-03-20 17:51:30+00:00,3,0,1
-4102321777,64713,BUG:,closed,2026-03-19 15:04:13+00:00,2026-03-19 15:45:29+00:00,1,0,1
-4101419288,64707,DIST: Include Vendored Licenses in Wheel,closed,2026-03-19 12:39:33+00:00,2026-03-20 18:32:39+00:00,4,1,1
-4101062665,64704,convert_dtypes corrupts column shape on sliced DataFrame with mixed dtypes,closed,2026-03-19 11:29:46+00:00,2026-03-19 16:50:12+00:00,2,0,1
-4100675535,64702,BUG: Wrong dataframe data after `convert_dtypes`,closed,2026-03-19 10:11:31+00:00,2026-03-21 02:55:33+00:00,1,1,1
+4104601622,64729,"DEPR: Deprecate dayofweek, dayofyear, daysinmonth",closed,2026-03-19 22:41:09+00:00,2026-03-26 21:34:23+00:00,1,6,1
+4104591950,64728,DEPR: Series.__setitem__ with array key and Series value not aligning by index,closed,2026-03-19 22:39:53+00:00,2026-04-08 20:53:01+00:00,0,19,1
+4104588144,64727,DEPR: Index.slice_locs,closed,2026-03-19 22:39:22+00:00,2026-04-08 20:53:05+00:00,0,19,1
+4104578872,64726,DEPR: deprecate track_times keyword in HDFStore.put,closed,2026-03-19 22:38:06+00:00,2026-04-02 21:55:31+00:00,2,13,1
+4104546616,64725,DEPR: Deprecate passing non-dict to DataFrame.from_dict,closed,2026-03-19 22:32:01+00:00,2026-03-27 18:30:17+00:00,1,7,1
+4104542613,64724,DEPR: ExcelFile.parse,closed,2026-03-19 22:31:10+00:00,2026-03-20 19:03:35+00:00,2,0,1
+4104531478,64723,DEPR: read_csv cache_dates keyword,closed,2026-03-19 22:28:18+00:00,2026-03-25 19:09:39+00:00,1,5,1
+4104519334,64722,DEPR: Deprecate as_index argument in groupby,closed,2026-03-19 22:24:47+00:00,2026-04-08 17:53:58+00:00,1,19,1
+4104509302,64721,BUG/DEPR: groupby with duplicate index level names,closed,2026-03-19 22:21:54+00:00,2026-04-07 13:14:59+00:00,1,18,1
+4104467352,64720,DEPR: unnecessary *args/**kwargs in groupby ops,closed,2026-03-19 22:09:57+00:00,2026-03-20 19:01:40+00:00,0,0,1
+4104463822,64719,DEPR: deprecate DataFrame.iterrows,closed,2026-03-19 22:08:59+00:00,2026-04-08 20:53:08+00:00,0,19,1
+4104451279,64718,DEPR: deprecate dropna keyword and io.hdf.dropna_table option in HDFStore,closed,2026-03-19 22:05:39+00:00,2026-03-27 18:27:31+00:00,1,7,1
+4104425839,64717,DEPR: deprecate set_eng_float_format,closed,2026-03-19 21:59:07+00:00,2026-04-18 17:04:17+00:00,1,29,1
+4103840167,64716,BLD: macos x86_64 failures,closed,2026-03-19 19:40:13+00:00,2026-03-20 00:15:43+00:00,2,0,1
