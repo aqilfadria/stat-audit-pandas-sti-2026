@@ -16,13 +16,13 @@ Repository URL: https://github.com/pandas-dev/pandas
 ---
 
 ## Team Members
-| Member | Name | NIM | Role |
-|---|---|
-| A | Ahmad Aqil Fadria | 1519625006 |  Data Engineer |
-| B | Nasya Putri Salsabila | 1519625007 | Estimation Analyst |
-| C | Muhammad Hanief Inayatur Rahman | ... | Inference Analyst |
-| D | Muhammad Rizqi Hazami | ... | Hypothesis Analyst |
-| E | Krishna Dhikha Pratama | ... | Computation Analyst |
+| Member | Name                              | NIM        | Role                   |
+|--------|-----------------------------------|------------|------------------------|
+| A      | Ahmad Aqil Fadria                | 1519625006 | Data Engineer          |
+| B      | Nasya Putri Salsabila            | 1519625007 | Estimation Analyst     |
+| C      | Muhammad Hanief Inayatur Rahman  | ...        | Inference Analyst      |
+| D      | Muhammad Rizqi Hazami            | ...        | Hypothesis Analyst     |
+| E      | Krishna Dhikha Pratama           | ...        | Computation Analyst    |
 
 ---
 
