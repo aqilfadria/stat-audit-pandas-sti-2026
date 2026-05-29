@@ -5,7 +5,7 @@
 | Member                          | Peran               | Tools   | ~% Kode AI-assisted | Interpretation AI-assisted? |
 | ------------------------------- | ------------------- | -----   | ------------------- | --------------------------- |
 | Ahmad Aqil Fadria               | Data Engineer       | ChatGPT |          55%        |              No             |
-| Nasya Putri Salsabila           | Estimation Analyst  |         |                     |                             |
+| Nasya Putri Salsabila           | Estimation Analyst  | Claude  |          50%        |              No             |
 | Muhammad Hanief Inayatur Rahman | Inference Analyst   |         |                     |                             |
 | Muhammad Rizqi Hazami           | Hypothesis Analyst  |         |                     |                             |
 | Krishna Dhikha Pratama          | Computation Analyst |         |                     |                             |
@@ -22,10 +22,10 @@
 ## Member B - Nasya Putri Salsabila - Estimation Analyst
 
 | No | Tugas | Alat AI | Prompt Singkat | Cara Output Digunakan |
-| -- | ----- | ------- | -------------- | --------------------- |
-| 1  |       |         |                |                       |
-| 2  |       |         |                |                       |
-| 3  |       |         |                |                       |
+|----|-------|---------|----------------|----------------------|
+| 1 | Scaffold estimator.py dan struktur notebook | Claude | Scaffold MLE functions per Tsun 2020 for pandas-dev/pandas audit | Digunakan sebagai kerangka awal, diverifikasi dan disesuaikan dengan kolom output Role A |
+| 2 | Penyesuaian fungsi MLE dengan dataset | Claude | Sesuaikan fungsi mle_bernoulli dengan kolom merged di pr_dataset.csv | Digunakan sebagai referensi, dimodifikasi sesuai kebutuhan analisis |
+| 3 | Debugging import error src.estimator | Claude | Cara mengatasi ModuleNotFoundError src.estimator di Jupyter notebook | Digunakan sebagai panduan troubleshooting path Python |
 
 ---
 
