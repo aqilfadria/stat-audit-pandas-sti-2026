@@ -3,6 +3,15 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 
+# Statistical Audit of pandas-dev/pandas
+
+## Notebooks
+
+| Notebook | Open in Colab |
+|----------|--------------|
+| 01_eda.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aqilfadria/stat-audit-pandas-sti-2025/blob/main/notebooks/01_eda.ipynb) |
+| 02_estimation.ipynb | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aqilfadria/stat-audit-pandas-sti-2025/blob/main/notebooks/02_estimation.ipynb) |
+
 ## Project Description
 
 Project ini bertujuan untuk melakukan statistical audit pada repository open-source `pandas-dev/pandas` menggunakan data dari GitHub REST API.
