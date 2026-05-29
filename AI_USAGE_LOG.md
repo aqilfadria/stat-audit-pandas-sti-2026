@@ -1,17 +1,17 @@
-# AI Usage Log - Statistical Audit of pandas-dev/pandas
+# AI USAGE LOG - pandas-dev/pandas Statistical Audit
 
 ## Ringkasan
-| Member                          | Peran               |  Tools  |  ~% Kode AI-assisted | Interpretation AI-assisted? |
-| ------------------------------- | ------------------- | -----   | -------------------  | --------------------------- |
-| Ahmad Aqil Fadria               | Data Engineer       | ChatGPT |        %55           |             Tidak           |
-| Nasya Putri Salsabila           | Estimation Analyst  |         |                      |                             |
-| Muhammad Hanief Inayatur Rahman | Inference Analyst   |         |                      |                             |
-| Muhammad Rizqi Hazami           | Hypothesis Analyst  |         |                      |                             |
-| Krishna Dhikha Pratama          | Computation Analyst |         |                      |                             |
 
-## Detail Per-Anggota
+| Member                          | Peran               | Tools   | ~% Kode AI-assisted | Interpretation AI-assisted? |
+| ------------------------------- | ------------------- | -----   | ------------------- | --------------------------- |
+| Ahmad Aqil Fadria               | Data Engineer       | ChatGPT |          55%        |              No             |
+| Nasya Putri Salsabila           | Estimation Analyst  | Claude  |          50%        |              No             |
+| Muhammad Hanief Inayatur Rahman | Inference Analyst   |         |                     |                             |
+| Muhammad Rizqi Hazami           | Hypothesis Analyst  |         |                     |                             |
+| Krishna Dhikha Pratama          | Computation Analyst |         |                     |                             |
 
-## Ahmad Aqil Fadria - Data Engineer
+
+## Member A - Ahmad Aqil Fadria - Data Engineer
 
 | No | Tugas                          | Alat AI | Prompt Singkat                                                | Cara Output Digunakan                                      |
 | -- | ------------------------------ | ------- | ------------------------------------------------------------- | ---------------------------------------------------------- |
@@ -19,37 +19,43 @@
 | 2  | Data cleaning issue dataset    | ChatGPT | Membuat proses cleaning issue dataset dan feature engineering | Digunakan sebagai dasar preprocessing data                 |
 | 3  | Debugging error Git dan Python | ChatGPT | Mengatasi error Git, pip, dan notebook                        | Digunakan sebagai panduan troubleshooting                  |
 
-## Ditulis Tanpa Bantuan AI
+## Member B - Nasya Putri Salsabila - Estimation Analyst
 
-Beberapa bagian proyek dikerjakan secara langsung tanpa bantuan AI, meliputi:
-
-* menjalankan notebook dan melakukan pengecekan hasil output
-* pengelolaan repository GitHub dan proses push commit
-* pengecekan struktur folder proyek
-* validasi dataset hasil cleaning
-* koordinasi pembagian tugas antar anggota kelompok
-* penyesuaian akhir isi README dan dokumentasi proyek
+| No | Tugas | Alat AI | Prompt Singkat | Cara Output Digunakan |
+|----|-------|---------|----------------|----------------------|
+| 1 | Scaffold estimator.py dan struktur notebook | Claude | Scaffold MLE functions per Tsun 2020 for pandas-dev/pandas audit | Digunakan sebagai kerangka awal, diverifikasi dan disesuaikan dengan kolom output Role A |
+| 2 | Penyesuaian fungsi MLE dengan dataset | Claude | Sesuaikan fungsi mle_bernoulli dengan kolom merged di pr_dataset.csv | Digunakan sebagai referensi, dimodifikasi sesuai kebutuhan analisis |
+| 3 | Debugging import error src.estimator | Claude | Cara mengatasi ModuleNotFoundError src.estimator di Jupyter notebook | Digunakan sebagai panduan troubleshooting path Python |
 
 ---
 
-### B — Estimation Analyst
+## Member C - Muhammad Hanief Inayatur Rahman - Inference Analyst
 
-(Akan diisi oleh Anggota B.)
-
----
-
-### C — Inference Analyst
-
-(Akan diisi oleh Anggota C.)
+| No | Tugas | Alat AI | Prompt Singkat | Cara Output Digunakan |
+| -- | ----- | ------- | -------------- | --------------------- |
+| 1  |       |         |                |                       |
+| 2  |       |         |                |                       |
+| 3  |       |         |                |                       |
 
 ---
 
-### D — Hypothesis Analyst
+## Member D - Muhammad Rizqi Hazami - Hypothesis Analyst
 
-(Akan diisi oleh Anggota D.)
+| No | Tugas | Alat AI | Prompt Singkat | Cara Output Digunakan |
+| -- | ----- | ------- | -------------- | --------------------- |
+| 1  |       |         |                |                       |
+| 2  |       |         |                |                       |
+| 3  |       |         |                |                       |
 
 ---
 
-### E — Computation Analyst
+## Member E - Krishna Dhikha Pratama - Computation Analyst
 
-(Akan diisi oleh Anggota E.)
+| No | Tugas | Alat AI | Prompt Singkat | Cara Output Digunakan |
+| -- | ----- | ------- | -------------- | --------------------- |
+| 1  |       |         |                |                       |
+| 2  |       |         |                |                       |
+| 3  |       |         |                |                       |
+
+
+# Group Reflection
