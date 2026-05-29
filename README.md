@@ -94,7 +94,7 @@ cd stat-audit-pandas-sti-2026
 ### 2. Install Library yang Dibutuhkan
 
 ```bash
-pip install pandas matplotlib seaborn requests notebook numpy scipy
+pip install -r requirements.txt
 ```
 
 ### 3. Jalankan Jupyter Notebook
