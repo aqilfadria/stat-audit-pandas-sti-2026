@@ -3,8 +3,6 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 
-# Statistical Audit of pandas-dev/pandas
-
 ## Notebooks
 
 | Notebook | Open in Colab |
